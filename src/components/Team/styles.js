@@ -10,7 +10,7 @@ const TeamWrapper = styled.div`
     justify-content: space-evenly;
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     flex-wrap: wrap;
   }
 `;

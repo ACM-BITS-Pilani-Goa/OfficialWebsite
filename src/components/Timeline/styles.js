@@ -5,7 +5,13 @@ const TimelineWrapper = styled.div`
   justify-content: center;
   align-items: center;
   .timeline-main {
-    max-width: 50%;
+    max-width: 70%;
+  }
+
+  @media screen and (max-width: 992px) {
+    .timeline-main {
+      max-width: 70%;
+    }
   }
 
   @media screen and (max-width: 768px) {

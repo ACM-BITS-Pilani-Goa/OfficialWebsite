@@ -53,6 +53,7 @@ const Timeline = () => {
           cardHeight="100px"
           items={items}
           mode="VERTICAL_ALTERNATING"
+          useReadMore={false}
         />
       </div>
     </TimelineWrapper>
