@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import img1 from './img/image1.jpeg';
-import img2 from './img/image2.jpeg';
-import img3 from './img/image3.jpg';
+import img1 from "./img/image1.jpeg";
+import img2 from "./img/image2.jpeg";
+import img3 from "./img/image3.jpg";
 
 const AboutUsWrapper = styled.div`
   body,
