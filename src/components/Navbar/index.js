@@ -1,22 +1,19 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NavWrapper from "./styles";
-import ACMnav from '../../images/ACM logo.svg'
+import ACMnav from "../../images/ACM logo.svg";
 
-class Navbar extends Component {
+const Navbar = () => {
+  const [click, setClick] = useState(false);
 
-  constructor(props) {
-    super(props)
+  const handleClick = () => {
+    setClick((prevState) => !prevState);
+  };
+  const closeMobileMenu = () => {
+    setClick(false);
+  };
 
-    this.state = {
-      click: false
-    }
-  }
-
-  handleClick = () => { this.setState({ click: !this.state.click }); }
-  closeMobileMenu = () => { this.setState({ click: false }); }
-
-  handleScroll = () => {
+  const handleScroll = () => {
     if (window.scrollY > 20) {
       document.querySelector(".navbar").className = "navbar scroll";
     } else {
@@ -24,51 +21,46 @@ class Navbar extends Component {
     }
   };
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return function cleanup() {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-
-
-
-  render() {
-    return (
-      <NavWrapper>
-        <nav className="navbar">
-          <Link to="/" className="navbar-logo" onClick={this.closeMobileMenu}>
-            <img src={ACMnav} style={{width: '50%'}}/>
-          </Link>
-          <div className="menu-icon" onClick={this.handleClick}>
-            <i className={this.state.click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
-          <ul className={this.state.click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={this.closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/aboutUs" className="nav-links" onClick={this.closeMobileMenu}>
-                About us
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/contact-us"
-                className="nav-links"
-                onClick={this.closeMobileMenu}
-              >
-                Contact Us
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </NavWrapper>
-    );
-  }
+  return (
+    <NavWrapper>
+      <nav className="navbar">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <img src={ACMnav} style={{ width: "50%" }} />
+        </Link>
+        <div className="menu-icon" onClick={handleClick}>
+          <i className={click ? "fas fa-times" : "fas fa-bars"} />
+        </div>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/aboutUs" className="nav-links" onClick={closeMobileMenu}>
+              About us
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/contact-us"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Contact Us
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </NavWrapper>
+  );
 };
 
 export default Navbar;
