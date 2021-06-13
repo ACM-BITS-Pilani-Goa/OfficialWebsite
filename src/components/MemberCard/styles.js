@@ -28,7 +28,6 @@ const MemberCardWrapper = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
     overflow: hidden;
     transition: transform 0.3s;
     border-radius: 5px;
