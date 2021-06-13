@@ -1,9 +1,10 @@
 import React from "react";
+import Timeline from "../components/Timeline";
 
 export default function Home() {
   return (
     <>
-      <h1 className="home"></h1>
+      <Timeline />
     </>
   );
 }

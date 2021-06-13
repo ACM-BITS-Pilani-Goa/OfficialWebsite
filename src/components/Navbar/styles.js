@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const NavWrapper = styled.div`
+  position: relative;
+  z-index: 99;
   .navbar {
     background: linear-gradient(
       90deg,
