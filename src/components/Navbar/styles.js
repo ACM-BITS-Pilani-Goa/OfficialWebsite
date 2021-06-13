@@ -4,7 +4,7 @@ const NavWrapper = styled.div`
   position: relative;
   z-index: 99;
   .navbar {
-    background: rgb(0,0,0,0);
+    background: rgb(0, 0, 0, 0);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -13,13 +13,17 @@ const NavWrapper = styled.div`
     position: fixed;
     width: 100%;
   }
-
   .scroll {
-    background-color: rgb(2,0,36);
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 34%, rgba(0,212,255,1) 100%);
+    background-color: rgb(2, 0, 36);
+    background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 34%,
+      rgba(0, 212, 255, 1) 100%
+    );
     box-shadow: 0 7px 30px -15px #1a2638;
   }
-  
+
   .navbar-logo {
     color: #000;
     justify-self: start;
@@ -28,12 +32,10 @@ const NavWrapper = styled.div`
     text-decoration: none;
     font-size: 2rem;
   }
-
   .fa-firstdraft {
     margin-left: 0.5rem;
     font-size: 1.6rem;
   }
-
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -44,42 +46,43 @@ const NavWrapper = styled.div`
     justify-content: end;
     margin-right: 2rem;
   }
-
   .nav-item {
     display: flex;
     align-items: center;
     height: 80px;
+    position: relative;
   }
-
+  .nav-item::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #FF0000;
+    position: absolute;
+    top: 60px;
+    transition: 0.5s;
+  }
+  .nav-item:hover::after {
+    width: 100%;
+  }
   .nav-links {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
   }
 
-  .nav-links:hover {
-    background-color: #1888ff;
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
-  }
-
   .fa-bars {
     color: #fff;
   }
-
   .nav-links-mobile {
     display: none;
   }
-
   .menu-icon {
     display: none;
   }
-
   @media screen and (max-width: 960px) {
     .NavbarItems {
       position: relative;
     }
-
     .nav-menu {
       display: flex;
       flex-direction: column;
@@ -91,7 +94,6 @@ const NavWrapper = styled.div`
       opacity: 1;
       transition: all 0.4s ease;
     }
-
     .nav-menu.active {
       background: #242222;
       left: 0;
@@ -99,26 +101,22 @@ const NavWrapper = styled.div`
       transition: all 0.4s ease;
       z-index: 1;
     }
-
     .nav-links {
       text-align: center;
       padding: 2rem;
       width: 100%;
       display: table;
     }
-
     .nav-links:hover {
       background-color: #1888ff;
       border-radius: 0;
     }
-
     .navbar-logo {
       position: absolute;
       top: 0;
       left: 0;
       transform: translate(25%, 50%);
     }
-
     .menu-icon {
       display: block;
       position: absolute;
@@ -128,12 +126,10 @@ const NavWrapper = styled.div`
       font-size: 1.8rem;
       cursor: pointer;
     }
-
     .fa-times {
       color: #fff;
       font-size: 2rem;
     }
-
     .nav-links-mobile {
       display: block;
       text-align: center;
@@ -146,13 +142,11 @@ const NavWrapper = styled.div`
       color: #fff;
       font-size: 1.5rem;
     }
-
     .nav-links-mobile:hover {
       background: #fff;
       color: #1888ff;
       transition: 250ms;
     }
-
     button {
       display: none;
     }
