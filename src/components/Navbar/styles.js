@@ -80,6 +80,9 @@ const NavWrapper = styled.div`
     display: none;
   }
   @media screen and (max-width: 960px) {
+    .navbar {
+      background: #242222;
+    }
     .NavbarItems {
       position: relative;
     }
@@ -90,7 +93,7 @@ const NavWrapper = styled.div`
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 90vh;
+      height: 100vh;
       position: absolute;
       top: 80px;
       left: -100%;
