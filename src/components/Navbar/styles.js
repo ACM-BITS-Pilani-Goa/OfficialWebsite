@@ -4,20 +4,24 @@ const NavWrapper = styled.div`
   position: relative;
   z-index: 99;
   .navbar {
-    background: linear-gradient(
-      90deg,
-      rgb(28, 27, 27) 0%,
-      rgb(26, 23, 23) 100%
-    );
+    background: rgb(0,0,0,0);
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    position: fixed;
+    width: 100%;
   }
 
+  .scroll {
+    background-color: rgb(2,0,36);
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 34%, rgba(0,212,255,1) 100%);
+    box-shadow: 0 7px 30px -15px #1a2638;
+  }
+  
   .navbar-logo {
-    color: #fff;
+    color: #000;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -36,7 +40,7 @@ const NavWrapper = styled.div`
     grid-gap: 10px;
     list-style: none;
     text-align: center;
-    width: 70vw;
+    width: 85vw;
     justify-content: end;
     margin-right: 2rem;
   }
