@@ -5,69 +5,31 @@ export default function AboutUs() {
   return (
     <>
       <AboutUsWrapper>
-        <div className="pimg1">
-          <div className="ptext">
-            <span className="border">Parallax Website</span>
-          </div>
-        </div>
+        <div className="pimg1"></div>
 
         <section className="section section-light">
-          <h2>Section One</h2>
+          <h2>Some intro about us...</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt,
-            laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora
-            facere dolores nisi facilis consequatur, odio hic minima nostrum.
-            Perferendis eos earum praesentium, blanditiis sapiente labore
-            aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
-            inventore commodi cumque esse suscipit optio aliquam et, dolorem a
-            cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde
-            eveniet placeat quisquam blanditiis voluptatem doloremque fugiat
-            dolor repellendus ratione in. Distinctio provident dolorem modi
-            cumque illo enim quidem tempora deserunt nostrum voluptate labore
-            repellat quisquam quasi cum suscipit dolore ab consequuntur, ad
-            porro earum temporibus. Laborum ad temporibus ex, omnis!
+            We are the Association for Computing Machinery (ACM), Student
+            Chapter, Birla Institute of Technology and Science, Pilani, Goa
+            campus.
           </p>
         </section>
 
         <div className="pimg2">
           <div className="ptext">
-            <span className="border trans">Image Two Text</span>
+            <span className="border trans"></span>
           </div>
         </div>
 
         <section className="section section-dark">
-          <h2>Section Two</h2>
+          <h2>The Goal</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt,
-            laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora
-            facere dolores nisi facilis consequatur, odio hic minima nostrum.
-            Perferendis eos earum praesentium, blanditiis sapiente labore
-            aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
-            inventore commodi cumque esse suscipit optio aliquam et, dolorem a
-            cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde
-            eveniet placeat quisquam blanditiis voluptatem doloremque fugiat
-            dolor repellendus ratione in.
-          </p>
-        </section>
-
-        <div className="pimg3">
-          <div className="ptext">
-            <span className="border trans">Image Three Text</span>
-          </div>
-        </div>
-
-        <section className="section section-dark">
-          <h2>Section Three</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt,
-            laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora
-            facere dolores nisi facilis consequatur, odio hic minima nostrum.
-            Perferendis eos earum praesentium, blanditiis sapiente labore
-            aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
-            inventore commodi cumque esse suscipit optio aliquam et, dolorem a
-            cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde
-            eveniet placeat quisquam blanditiis voluptatem doloremque fugiat
-            dolor repellendus ratione in.
+            The chapter aims at serving as a dynamic hub of activites for the
+            students of BITS Goa, where they meet, interact, learn from each
+            other and nuture themselves in the process. It aims to foster a
+            sense of innovation and creativity among computer science
+            enthusiasts.
           </p>
         </section>
       </AboutUsWrapper>

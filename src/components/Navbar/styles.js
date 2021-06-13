@@ -56,7 +56,7 @@ const NavWrapper = styled.div`
     content: "";
     height: 3px;
     width: 0%;
-    background: #FF0000;
+    background: #ff0000;
     position: absolute;
     top: 60px;
     transition: 0.5s;
@@ -80,14 +80,20 @@ const NavWrapper = styled.div`
     display: none;
   }
   @media screen and (max-width: 960px) {
+    .navbar {
+      background: #242222;
+    }
     .NavbarItems {
       position: relative;
+    }
+    .scroll {
+      z-index: -1;
     }
     .nav-menu {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 90vh;
+      height: 100vh;
       position: absolute;
       top: 80px;
       left: -100%;
@@ -112,10 +118,7 @@ const NavWrapper = styled.div`
       border-radius: 0;
     }
     .navbar-logo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(25%, 50%);
+      display: none;
     }
     .menu-icon {
       display: block;

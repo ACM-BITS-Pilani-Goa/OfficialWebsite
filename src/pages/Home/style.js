@@ -9,6 +9,7 @@ const HomeWrapper = styled.div`
 
   .Bdome {
     background-image: url(${BDOME});
+    opacity: 1;
     height: 100vh;
     background-attachment: fixed;
     background-position: center;

@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import img1 from "./img/image1.jpeg";
+import img2 from "./img/image2.jpeg";
+import img3 from "./img/image3.jpg";
 
 const AboutUsWrapper = styled.div`
   body,
   html {
     height: 100%;
     margin: 0;
+    margin-top: 20px;
     font-size: 16px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -16,7 +20,7 @@ const AboutUsWrapper = styled.div`
   .pimg2,
   .pimg3 {
     position: relative;
-    opacity: 0.8;
+    opacity: 0.9;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,18 +33,18 @@ const AboutUsWrapper = styled.div`
   }
 
   .pimg1 {
-    background-image: url("./img/image1.jpg");
-    min-height: 100%;
+    background-image: url("${img1}");
+    min-height: 400px;
   }
 
   .pimg2 {
-    background-image: url("./img/image2.jpg");
+    background-image: url("${img2}");
     /*min-height:400px;*/
-    min-height: 100%;
+    min-height: 400px;
   }
 
   .pimg3 {
-    background-image: url("./img/image3.jpg");
+    background-image: url("${img3}");
     min-height: 400px;
   }
 
