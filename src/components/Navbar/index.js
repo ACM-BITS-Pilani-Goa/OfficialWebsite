@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import NavWrapper from "./styles";
 
-function Navbar() {
+const Navbar = () => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
   return (
-    <>
+    <NavWrapper>
       <nav className="navbar">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           ACM
@@ -40,8 +40,8 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-    </>
+    </NavWrapper>
   );
-}
+};
 
 export default Navbar;
