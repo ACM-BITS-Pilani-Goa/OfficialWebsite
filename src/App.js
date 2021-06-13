@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/index";
 import About from "./pages/aboutUs/index";
 import Contact from "./pages/contactUs/index";
+import Footer from './components/Footer';
+
 // import MemberCard from "./components/MemberCard";
 import Team from "./components/Team";
 
@@ -18,6 +20,7 @@ const App = () => {
         <Route path="/contact" component={Contact} />
       </Switch>
       <Team />
+      <Footer />
     </Router>
   );
 };
