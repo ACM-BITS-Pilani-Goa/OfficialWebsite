@@ -1,22 +1,22 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
-import Home from "./pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import AboutUs from "./pages/aboutUs";
-import ContactUs from "./pages/ContactUs";
+import Home from "./pages/Home";
+import About from "./pages/aboutUs";
+import Contact from "./pages/ContactUs";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/aboutUs" component={AboutUs} />
-        <Route path="/contact-us" component={ContactUs} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
       </Switch>
     </Router>
   );
-}
+};
 
 export default App;
