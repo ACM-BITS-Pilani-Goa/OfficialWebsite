@@ -56,7 +56,7 @@ const NavWrapper = styled.div`
     content: "";
     height: 3px;
     width: 0%;
-    background: #FF0000;
+    background: #ff0000;
     position: absolute;
     top: 60px;
     transition: 0.5s;
@@ -82,6 +82,9 @@ const NavWrapper = styled.div`
   @media screen and (max-width: 960px) {
     .NavbarItems {
       position: relative;
+    }
+    .scroll {
+      z-index: -1;
     }
     .nav-menu {
       display: flex;
@@ -112,10 +115,7 @@ const NavWrapper = styled.div`
       border-radius: 0;
     }
     .navbar-logo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(25%, 50%);
+      display: none;
     }
     .menu-icon {
       display: block;
