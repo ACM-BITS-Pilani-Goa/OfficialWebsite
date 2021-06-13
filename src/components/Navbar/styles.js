@@ -85,14 +85,14 @@ const NavWrapper = styled.div`
       top: 80px;
       left: -100%;
       opacity: 1;
-      transition: all 0.5s ease;
+      transition: all 0.4s ease;
     }
 
     .nav-menu.active {
       background: #242222;
       left: 0;
       opacity: 1;
-      transition: all 0.5s ease;
+      transition: all 0.4s ease;
       z-index: 1;
     }
 

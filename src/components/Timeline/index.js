@@ -49,7 +49,7 @@ const Timeline = () => {
             cardBgColor: "#f0e7da",
           }}
           hideControls
-          // scrollable
+          scrollable
           cardHeight="100px"
           items={items}
           mode="VERTICAL_ALTERNATING"
