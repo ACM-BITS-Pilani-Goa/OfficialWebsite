@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img1 from "./img/image1.jpeg";
+import img1 from "./img/img1.jpeg";
 import img2 from "./img/image2.jpeg";
 import img3 from "./img/image3.jpg";
 
@@ -33,7 +33,13 @@ const AboutUsWrapper = styled.div`
   }
 
   .pimg1 {
-    background-image: url("${img1}");
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("${img1}");
     min-height: 400px;
   }
 
