@@ -5,7 +5,7 @@ const ResourceWrapper = styled.div`
   .resourcePic {
     background-image: url(${resource});
     opacity: 1;
-    height: 50vh;
+    height: 93vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,6 +17,14 @@ const ResourceWrapper = styled.div`
   }
   .white {
     color: white;
+  }
+  .holder {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    flex-wrap: wrap;
   }
   .base {
     background: red;

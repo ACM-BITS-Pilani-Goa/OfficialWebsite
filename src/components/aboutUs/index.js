@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <>
       <AboutUsWrapper>
-        <div className="pimg1"></div>
+        {/*<div className="pimg1"></div>*/}
 
         <section className="section section-light">
           <h2>About Us</h2>
@@ -26,11 +26,11 @@ export default function AboutUs() {
           </p>
         </section>
 
-        <div className="pimg2">
+        {/*<div className="pimg2">
           <div className="ptext">
             <span className="border trans"></span>
           </div>
-        </div>
+        </div>*/}
 
         <section className="section section-dark">
           <h2>Our Vision</h2>
