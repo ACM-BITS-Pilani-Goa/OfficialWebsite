@@ -10,13 +10,23 @@ export default function AboutUs() {
   return (
     <>
       <AboutUsWrapper>
-        <div className="pimg1"></div>
+        <div className="Bdome">
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              color: "white",
+              fontFamily: "times, Times New Roman, times-roman, georgia, serif",
+              fontSize: "96px",
+              fontWeight: "bold",
+            }}
+          >
+            Events
+          </div>
+        </div>
       </AboutUsWrapper>
       <EventsWrapperMain>
         <div className="section" id="events">
-          <div className="section-title">
-            <span>Events</span>
-          </div>
           <div className="section-row">
             <div className="events-container">
               <Zoom>

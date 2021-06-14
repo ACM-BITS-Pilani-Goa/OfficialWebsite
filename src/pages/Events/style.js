@@ -1,100 +1,78 @@
 import styled from "styled-components";
 import img1 from "./img/img1.jpeg";
-import img2 from "./img/image2.jpeg";
-import img3 from "./img/image3.jpg";
 
 const AboutUsWrapper = styled.div`
-  body,
-  html {
-    height: 100%;
-    margin: 0;
-    margin-top: 20px;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    line-height: 1.8em;
-    color: #666;
+  .ACMlogo {
+    position: absolute;
+    align-self: center;
   }
 
-  .pimg1,
-  .pimg2,
-  .pimg3 {
-    position: relative;
-    opacity: 0.9;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    /*
-    fixed = parallax
-    scroll = normal
-  */
-    background-attachment: fixed;
-  }
-
-  .pimg1 {
+  .Bdome {
+    background: rgb(0, 0, 0);
     background: radial-gradient(
         circle,
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url("${img1}");
-    min-height: 400px;
+      url(${img1});
+    opacity: 1;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .banner:hover {
+    animation: bounce 0.5s infinite;
+    -webkit-animation: bounce 0.5s infinite;
+    -moz-animation: bounce 0.5s infinite;
   }
 
-  .pimg2 {
-    background-image: url("${img2}");
-    /*min-height:400px;*/
-    min-height: 400px;
+  @media screen and (max-width: 768px) {
+    .banner {
+      width: 80%;
+    }
   }
 
-  .pimg3 {
-    background-image: url("${img3}");
-    min-height: 400px;
+  @-webkit-keyframes bounce {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px);
+    }
   }
-
-  .section {
-    text-align: center;
-    padding: 50px 80px;
+  @-moz-keyframes bounce {
+    0%,
+    100% {
+      -moz-transform: translateY(0);
+    }
+    50% {
+      -moz-transform: translateY(-10px);
+    }
   }
-
-  .section-light {
-    background-color: #f4f4f4;
-    color: #666;
+  @-o-keyframes bounce {
+    0%,
+    100% {
+      -o-transform: translateY(0);
+    }
+    50% {
+      -o-transform: translateY(-10px);
+    }
   }
-
-  .section-dark {
-    background-color: #282e34;
-    color: #ddd;
-  }
-
-  .ptext {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-  }
-
-  .ptext .border {
-    background-color: #111;
-    color: #fff;
-    padding: 20px;
-  }
-
-  .ptext .border.trans {
-    background-color: transparent;
-  }
-
-  @media (max-width: 568px) {
-    .pimg1,
-    .pimg2,
-    .pimg3 {
-      background-attachment: scroll;
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
     }
   }
 `;
