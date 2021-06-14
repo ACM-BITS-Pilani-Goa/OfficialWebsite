@@ -76,11 +76,31 @@ const NavWrapper = styled.div`
     top: 60px;
     transition: 0.5s;
   }
+  .active {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    position: relative;
+  }
+  .active::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: #ff0000;
+    position: absolute;
+    top: 60px;
+    transition: 0.5s;
+  }
   .nav-item:hover::after {
     width: 100%;
   }
   .nav-links {
     color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  .nav-links-active {
+    color: red;
     text-decoration: none;
     padding: 0.5rem 1rem;
   }
