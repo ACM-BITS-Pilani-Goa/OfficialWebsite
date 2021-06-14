@@ -63,6 +63,8 @@ const ResourceWrapper = styled.div`
     background: white;
     position: relative;
     bottom: 55px;
+    display: flex;
+    justify-content: center;
   }
 
   .socialIconWrapper {

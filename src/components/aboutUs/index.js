@@ -9,8 +9,6 @@ export default function AboutUs() {
   return (
     <>
       <AboutUsWrapper>
-        {/* <div className="pimg1"></div> */}
-
         <section className="section section-light">
           <Fade left>
             <div>
@@ -32,13 +30,13 @@ export default function AboutUs() {
             </div>
           </Fade>
         </section>
-
+        <div className="pimg1"></div>
+        {/* <div className="pimg1"></div> */}
         {/* <div className="pimg2">
           <div className="ptext">
             <span className="border trans"></span>
           </div>
         </div> */}
-
         <section className="section section-dark">
           <Fade left>
             <div>
@@ -53,6 +51,11 @@ export default function AboutUs() {
             </div>
           </Fade>
         </section>
+        <div className="pimg2">
+          <div className="ptext">
+            <span className="border trans"></span>
+          </div>
+        </div>
       </AboutUsWrapper>
     </>
   );

@@ -7,7 +7,8 @@ export const FooterWrapper = styled.div`
   position: absolute;
   width: 100%;
 
-  h1, h2 {
+  h1,
+  h2 {
     color: white;
     text-align: center;
   }
