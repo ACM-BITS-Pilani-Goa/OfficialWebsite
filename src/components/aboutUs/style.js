@@ -24,11 +24,10 @@ const AboutUsWrapper = styled.div`
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     /*
-    fixed = parallax
-    scroll = normal
-  */
+      fixed = parallax
+      scroll = normal
+    */
     background-attachment: fixed;
   }
 
@@ -49,35 +48,26 @@ const AboutUsWrapper = styled.div`
   }
 
   .section {
-    text-align: center;
-    padding: 50px 80px;
+    font-size: 1.2rem;
+    padding: 100px 80px;
   }
 
   .section-light {
-    background-color: #f4f4f4;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
     color: #666;
-    font-size: 1.5rem;
-  }
-  .section-light h2 {
-    font-size: 3rem;
   }
 
   .section-dark {
     background-color: #282e34;
     color: #ddd;
-    font-size: 1.5rem;
-  }
-  .section-dark h2 {
-    font-size: 3rem;
   }
 
   .ptext {
     position: absolute;
     top: 50%;
     width: 100%;
-    text-align: center;
     color: #000;
-    font-size: 27px;
     letter-spacing: 8px;
     text-transform: uppercase;
   }
@@ -90,6 +80,22 @@ const AboutUsWrapper = styled.div`
 
   .ptext .border.trans {
     background-color: transparent;
+  }
+
+  .heading {
+    display: flex;
+    font-size: 2.2rem;
+  }
+
+  .main-text {
+    display: flex;
+    justify-content: left;
+  }
+
+  @media screen and (max-width: 768px) {
+    .section {
+      padding: 100px 40px;
+    }
   }
 
   @media (max-width: 568px) {
