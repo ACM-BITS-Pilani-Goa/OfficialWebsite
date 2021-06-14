@@ -75,7 +75,7 @@ const Team = () => {
     {
       name: "Arnav",
       title: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/arnav-jain-101118213",
       github: "https://github.com/arnavj05",
       img: `${arnav}`,
     },
