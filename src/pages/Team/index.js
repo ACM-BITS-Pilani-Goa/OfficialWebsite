@@ -1,14 +1,18 @@
 import React from "react";
 import MemberCard from "../../components/MemberCard";
+import jayant from "../../images/jayant.jpg";
+import aviral from "../../images/aviral.jpg";
+import aastha from "../../images/aastha.jpeg";
+import dev from "../../images/dev.jpeg";
+import siddhi from "../../images/siddhi.jpg";
+import sidhant from "../../images/sidhant.jpeg";
+import ritvij from "../../images/ritvij.jpg";
+import devesh from "../../images/devesh.jpg";
+import arnav from "../../images/arnav.jpeg";
+import mehul from "../../images/mehul.jpeg";
+import kanishq from "../../images/kanishq.jpg";
+import vaibhav from "../../images/vaibhav.jpg";
 import TeamWrapper from "./styles";
-import JayantPic from "../../images/jayant.jpg";
-import DeveshPic from "../../images/devesh.jpg";
-import AviralPic from "../../images/aviral.jpg";
-import AasthaPic from "../../images/aastha.jpeg";
-import RitvijPic from "../../images/ritvij.jpg";
-import SidhantPic from "../../images/sidhant.jpeg";
-import ArnavPic from "../../images/arnav.jpeg";
-import SiddhiPic from "../../images/siddhi.jpg";
 
 const Team = () => {
   const members = [
@@ -17,84 +21,84 @@ const Team = () => {
       title: "",
       linkeding: "",
       github: "",
-      img: `${JayantPic}`,
+      img: `${jayant}`,
     },
     {
       name: "Aastha",
       title: "",
       linkeding: "",
       github: "",
-      img: `${AasthaPic}`,
+      img: `${aastha}`,
     },
     {
       name: "Aviral",
       title: "",
       linkeding: "",
       github: "",
-      img: `${AviralPic}`,
+      img: `${aviral}`,
     },
     {
       name: "Dev",
       title: "",
       linkeding: "",
       github: "",
-      img: `${JayantPic}`,
+      img: `${dev}`,
     },
     {
       name: "Siddhi",
       title: "",
       linkeding: "",
       github: "",
-      img: `${SiddhiPic}`,
+      img: `${siddhi}`,
     },
     {
       name: "Sidhant",
       title: "",
       linkeding: "",
       github: "",
-      img: `${SidhantPic}`,
+      img: `${sidhant}`,
     },
     {
       name: "Ritvij",
       title: "",
       linkeding: "",
       github: "",
-      img: `${RitvijPic}`,
+      img: `${ritvij}`,
     },
     {
       name: "Devesh",
       title: "",
       linkeding: "",
       github: "",
-      img: `${DeveshPic}`,
+      img: `${devesh}`,
     },
     {
       name: "Arnav",
       title: "",
       linkeding: "",
       github: "",
-      img: `${ArnavPic}`,
+      img: `${arnav}`,
     },
     {
       name: "Mehul",
       title: "",
       linkeding: "",
       github: "",
-      img: `${JayantPic}`,
+      img: `${mehul}`,
     },
     {
       name: "Kanishq",
       title: "",
       linkeding: "",
       github: "",
-      img: `${JayantPic}`,
+      img: `${kanishq}`,
     },
     {
       name: "Vaibhav",
       title: "",
       linkeding: "",
       github: "",
-      img: `${JayantPic}`,
+      img: `${vaibhav}`,
     },
   ];
 

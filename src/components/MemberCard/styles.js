@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const MemberCardWrapper = styled.div`
   height: 250px;
-  width: 30%;
+  width: 300px;
   background: white;
   border-radius: 5px;
   box-shadow: 0 7px 30px -15px #1a2638;
@@ -20,12 +20,11 @@ const MemberCardWrapper = styled.div`
   .teamCardInner {
     background: linear-gradient(
         0deg,
-        rgba(44, 43, 43, 1),
-        rgba(44, 43, 43, 0.7),
-        rgba(44, 43, 43, 0.4),
-        rgba(44, 43, 43, 0)
+        rgba(44, 43, 43, 0.2) 0%,
+        rgba(44, 43, 43, 0.1) 10%,
+        rgb(0, 0, 0, 0) 100%
       ),
-      url("${(props) => props.img}");
+      url(${(props) => props.img});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
