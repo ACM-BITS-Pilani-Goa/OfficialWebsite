@@ -19,8 +19,6 @@ const Navbar = () => {
       document.querySelector("nav").className = "navbar scroll";
     } else if (window.innerWidth > 960) {
       document.querySelector("nav").className = "navbar";
-    } else {
-      document.querySelector("nav").className = "navbar1";
     }
   };
 
