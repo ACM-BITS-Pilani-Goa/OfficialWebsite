@@ -39,11 +39,11 @@ const MemberCard = ({
               <FaGithub color="#000" />
             </a>
           </div>
-          <div className="icon">
+          {/* <div className="icon">
             <a aria-label="Mail" href={link_mail}>
               <FaEnvelope color="#00bce4" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </MemberCardWrapper>
