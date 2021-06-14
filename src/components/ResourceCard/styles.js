@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MemberCardWrapper = styled.div`
+const ResourceWrapper = styled.div`
   height: 250px;
   width: 30%;
   background: white;
@@ -89,4 +89,4 @@ const MemberCardWrapper = styled.div`
   }
 `;
 
-export default MemberCardWrapper;
+export default ResourceWrapper;

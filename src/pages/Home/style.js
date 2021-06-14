@@ -9,6 +9,13 @@ const HomeWrapper = styled.div`
 
   .Bdome {
     background-image: url(${BDOME});
+    background-color: linear-gradient(
+      0deg,
+      rgba(44, 43, 43, 1),
+      rgba(44, 43, 43, 0.7),
+      rgba(44, 43, 43, 0.4),
+      rgba(44, 43, 43, 0)
+    ),
     opacity: 1;
     height: 100vh;
     background-attachment: fixed;
