@@ -15,10 +15,12 @@ export default function AboutUs() {
             style={{
               display: "flex",
               justifyContent: "center",
-              color: "white",
-              fontFamily: "times, Times New Roman, times-roman, georgia, serif",
+              color: "#E1F5FE",
+              //fontFamily: "times, Times New Roman, times-roman, georgia, serif",
               fontSize: "96px",
               fontWeight: "bold",
+              textTransform: "uppercase",
+              fontFamily: "Monoton, cursive",
             }}
           >
             Events
