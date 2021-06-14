@@ -49,11 +49,12 @@ const AboutUsWrapper = styled.div`
 
   .section {
     font-size: 1.2rem;
-    padding: 140px 80px;
+    padding: 100px 80px;
   }
 
   .section-light {
-    background-color: #f4f4f4;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
     color: #666;
   }
 
@@ -89,6 +90,12 @@ const AboutUsWrapper = styled.div`
   .main-text {
     display: flex;
     justify-content: left;
+  }
+
+  @media screen and (max-width: 768px) {
+    .section {
+      padding: 100px 40px;
+    }
   }
 
   @media (max-width: 568px) {
