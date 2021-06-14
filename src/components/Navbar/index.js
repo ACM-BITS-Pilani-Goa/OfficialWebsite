@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NavWrapper from "./styles";
 import ACMnav from "../../images/ACM logo.svg";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -12,6 +13,10 @@ const Navbar = () => {
   const closeMobileMenu = () => {
     setClick(false);
   };
+  const location = useLocation();
+
+  const { pathname } = location;
+  const splitLocation = pathname.split("/");
 
   const handleScroll = () => {
     if (window.scrollY > 20 && window.innerWidth > 960) {
@@ -40,26 +45,48 @@ const Navbar = () => {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <Link
+              to="/"
+              className={
+                splitLocation[1] === "" ? "nav-links-active" : "nav-links"
+              }
+              onClick={closeMobileMenu}
+            >
               Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/events" className="nav-links" onClick={closeMobileMenu}>
+            <Link
+              to="/events"
+              className={
+                splitLocation[1] === "events" ? "nav-links-active" : "nav-links"
+              }
+              onClick={closeMobileMenu}
+            >
               Events
             </Link>
           </li>
           <li className="nav-item">
             <Link
               to="/resources"
-              className="nav-links"
+              className={
+                splitLocation[1] === "resources"
+                  ? "nav-links-active"
+                  : "nav-links"
+              }
               onClick={closeMobileMenu}
             >
               Resources
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/team" className="nav-links" onClick={closeMobileMenu}>
+            <Link
+              to="/team"
+              className={
+                splitLocation[1] === "team" ? "nav-links-active" : "nav-links"
+              }
+              onClick={closeMobileMenu}
+            >
               Team
             </Link>
           </li>
