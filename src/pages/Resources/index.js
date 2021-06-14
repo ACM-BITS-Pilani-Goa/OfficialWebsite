@@ -6,51 +6,46 @@ import ResourceCard from "../../components/ResourceCard";
 export default function Resource() {
   const resources = [
     {
-      name: "Meth-420",
-      title: "",
-      linkeding: "",
-      github: "",
+      name: "GitHub",
+      desc: "Forks of best open source resources maintained in one place.",
+      link: "https://github.com/ACM-BITS-Pilani-Goa",
+      img: "",
     },
     {
-      name: "BITS-F169",
-      title: "",
-      linkeding: "",
-      github: "",
+      name: "Wiki",
+      desc: "Information.",
+      link: "https://wiki.bitsg.hosting.acm.org/wiki/index.php/Main_Page",
+      img: "",
     },
     {
-      name: "Meth-420",
-      title: "",
-      linkeding: "",
-      github: "",
-    },
-    {
-      name: "BITS-F169",
-      title: "",
-      linkeding: "",
-      github: "",
+      name: "Blog",
+      desc: "Coming soon",
+      link: "",
+      img: "",
     },
   ];
+
+  const resourceList = resources.map((resource, index) => (
+    <ResourceCard
+      key={index}
+      name={resource.name}
+      desc={resource.desc}
+      link={resource.link}
+      img={resource.img}
+    />
+  ));
+
   return (
-    <>
+    <div>
       <ResourceWrapper>
-        <div className="resourcePic">
-          <div className="base">
-            <h1 className="white">Resources Below!</h1>
-          </div>
+        <div className="holding" style={{ marginTop: "8vw" }}>
+          <h1 className="heading">Resources</h1>
+          <br />
+          <br />
+          {resourceList}
         </div>
-        <div className="holder" style={{ marginTop: "8vw" }}>
-          {resources.map((resource, index) => (
-            <ResourceCard
-              key={index}
-              name={resource.name}
-              title={resource.title}
-              link_github={resource.github}
-            />
-          ))}
-        </div>
-        ));
         {/*<CollapsibleTable />*/}
       </ResourceWrapper>
-    </>
+    </div>
   );
 }
