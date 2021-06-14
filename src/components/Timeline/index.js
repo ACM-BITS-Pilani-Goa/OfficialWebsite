@@ -41,6 +41,7 @@ const Timeline = () => {
   ];
   return (
     <TimelineWrapper>
+      <div className="heading">UPCOMING EVENTS</div>
       <div className="timeline-main">
         <Chrono
           theme={{
