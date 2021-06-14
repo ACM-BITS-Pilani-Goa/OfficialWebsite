@@ -1,38 +1,18 @@
 import React from "react";
-import AboutUsWrapper from "./style";
+import ResourceWrapper from "./style";
+import CollapsibleTable from "../../components/table/index";
 
-export default function AboutUs() {
+export default function Resource() {
   return (
     <>
-      <AboutUsWrapper>
-        <div className="pimg1"></div>
-
-        <section className="section section-light">
-          <h2>Some intro about us...</h2>
-          <p>
-            We are the Association for Computing Machinery (ACM), Student
-            Chapter, Birla Institute of Technology and Science, Pilani, Goa
-            campus.
-          </p>
-        </section>
-
-        <div className="pimg2">
-          <div className="ptext">
-            <span className="border trans"></span>
+      <ResourceWrapper>
+        <div className="resourcePic">
+          <div className="base">
+            <h1 className="white">Resources Below!</h1>
           </div>
         </div>
-
-        <section className="section section-dark">
-          <h2>The Goal</h2>
-          <p>
-            The chapter aims at serving as a dynamic hub of activites for the
-            students of BITS Goa, where they meet, interact, learn from each
-            other and nuture themselves in the process. It aims to foster a
-            sense of innovation and creativity among computer science
-            enthusiasts.
-          </p>
-        </section>
-      </AboutUsWrapper>
+        <CollapsibleTable />
+      </ResourceWrapper>
     </>
   );
 }
