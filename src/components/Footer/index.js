@@ -25,9 +25,7 @@ const Footer = () => {
         <div className="footer-column">
           <h2>Where to find us:</h2>
           <i class="fas fa-map-marker-alt" style={{ marginTop: "20px", color: "white", fontSize: "27px" }}>
-            <span>
             <span style={{ marginLeft: "10px", color: "white", fontSize: "20px" }}>BITS Pilani, K.K. Birla Goa campus,<br/>Zuarinagar, Sancoale, Goa</span>
-            </span>
           </i>
         </div>
       </div>

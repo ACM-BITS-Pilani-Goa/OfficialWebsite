@@ -23,4 +23,16 @@ export const FooterWrapper = styled.div`
     flex: 50%;
     text-align: center;
   }
+  @media all and (max-width: 768px) {
+    h1 {
+      margin: 0 0 0 10px;
+    }
+    .footer-section {
+      display: block;
+      margin: 0;
+    }
+    .footer-column {
+      margin: 50px 0;
+    }
+  }
 `;
