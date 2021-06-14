@@ -32,7 +32,7 @@ const Navbar = () => {
     <NavWrapper>
       <nav className="navbar">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <img src={ACMnav} style={{ width: "50%" }} />
+          <img src={ACMnav} className="acm-logo" style={{ width: "50%" }} />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -44,8 +44,22 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/aboutUs" className="nav-links" onClick={closeMobileMenu}>
-              About us
+            <Link to="/events" className="nav-links" onClick={closeMobileMenu}>
+              Events
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/resources"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Resources
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/team" className="nav-links" onClick={closeMobileMenu}>
+              Team
             </Link>
           </li>
           <li className="nav-item">

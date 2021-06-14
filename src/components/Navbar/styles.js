@@ -14,13 +14,8 @@ const NavWrapper = styled.div`
     width: 100%;
   }
   .scroll {
-    background-color: rgb(2, 0, 36);
-    background-image: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(9, 9, 121, 1) 34%,
-      rgba(0, 212, 255, 1) 100%
-    );
+    background-color: rgb(0,0,0);
+    background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,9,121,1) 61%, rgba(33,194,236,1) 100%);
     box-shadow: 0 7px 30px -15px #1a2638;
   }
 
@@ -32,6 +27,11 @@ const NavWrapper = styled.div`
     text-decoration: none;
     font-size: 2rem;
   }
+.acm-logo {
+  -webkit-animation: rotateOnY 2s infinite linear;
+    animation: rotateOnY 2s infinite linear;
+}
+
   .fa-firstdraft {
     margin-left: 0.5rem;
     font-size: 1.6rem;
@@ -81,7 +81,7 @@ const NavWrapper = styled.div`
   }
   @media screen and (max-width: 960px) {
     .navbar {
-      background: #242222;
+      // background: #242222;
     }
     .NavbarItems {
       position: relative;
@@ -152,6 +152,20 @@ const NavWrapper = styled.div`
     }
     button {
       display: none;
+    }
+  }
+
+  @-webkit-keyframes rotateOnY {
+    to {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes rotateOnY {
+    to {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
     }
   }
 `;
