@@ -1,12 +1,11 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import MemberCardWrapper from "./styles";
 
 const MemberCard = ({
   name = "",
   title = "TEAM MEMBER",
   link_linkedin = "#",
-  // link_mail = "#",
   link_github = "#",
   img = "https://picsum.photos/200",
 }) => {
@@ -39,11 +38,6 @@ const MemberCard = ({
               <FaGithub color="#000" />
             </a>
           </div>
-          {/* <div className="icon">
-            <a aria-label="Mail" href={link_mail}>
-              <FaEnvelope color="#00bce4" />
-            </a>
-          </div> */}
         </div>
       </div>
     </MemberCardWrapper>

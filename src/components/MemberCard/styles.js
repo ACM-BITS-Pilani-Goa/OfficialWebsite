@@ -21,8 +21,9 @@ const MemberCardWrapper = styled.div`
   .teamCardInner {
     background: linear-gradient(
         0deg,
-        rgba(44, 43, 43, 0.5),
-        rgba(44, 43, 43, 0),
+        rgba(44, 43, 43, 1),
+        rgba(44, 43, 43, 0.7),
+        rgba(44, 43, 43, 0.4),
         rgba(44, 43, 43, 0)
       ),
       url(${(props) => props.img});
@@ -56,6 +57,7 @@ const MemberCardWrapper = styled.div`
     text-align: center;
     color: rgb(209, 209, 209);
     font-size: 0.6rem;
+    display: none;
   }
 
   .socialIconContainer {
@@ -86,6 +88,10 @@ const MemberCardWrapper = styled.div`
     min-width: 45%;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
+
+    .tap {
+      display: block;
+    }
   }
 `;
 
