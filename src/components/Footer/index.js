@@ -6,7 +6,7 @@ const Footer = () => {
     <Box>
       <Container>
         <Row>
-          <Heading className="topFix">Contact Us</Heading>
+          <Heading className="topFix">Contact Us @</Heading>
           <FooterLink href="admin@bitsg.acm.org">
             <i className="far fa-envelope">
               <span style={{ marginLeft: "10px" }}>Email</span>
