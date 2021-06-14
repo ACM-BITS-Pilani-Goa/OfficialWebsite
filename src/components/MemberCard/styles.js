@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const MemberCardWrapper = styled.div`
   height: 250px;
-  width: 300px;
+  width: 350px;
+  margin-bottom: 40px;
   background: white;
   border-radius: 5px;
   box-shadow: 0 7px 30px -15px #1a2638;
