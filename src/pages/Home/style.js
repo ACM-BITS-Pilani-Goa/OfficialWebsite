@@ -2,20 +2,19 @@ import styled from "styled-components";
 import BDOME from "../../images/Bdome.png";
 const HomeWrapper = styled.div`
   .ACMlogo {
-    position: "absolute";
-    align-self: "center";
-    width: "200px";
+    position: absolute;
+    align-self: center;
   }
 
   .Bdome {
-    background-image: url(${BDOME});
-    background-color: linear-gradient(
-      0deg,
-      rgba(44, 43, 43, 1),
-      rgba(44, 43, 43, 0.7),
-      rgba(44, 43, 43, 0.4),
-      rgba(44, 43, 43, 0)
-    ),
+    background: rgb(0, 0, 0);
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(${BDOME});
     opacity: 1;
     height: 100vh;
     background-attachment: fixed;
@@ -31,6 +30,12 @@ const HomeWrapper = styled.div`
     animation: bounce 0.5s infinite;
     -webkit-animation: bounce 0.5s infinite;
     -moz-animation: bounce 0.5s infinite;
+  }
+
+  @media screen and (max-width: 768px) {
+    .banner {
+      width: 80%;
+    }
   }
 
   @-webkit-keyframes bounce {

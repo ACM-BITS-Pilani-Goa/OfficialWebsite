@@ -13,7 +13,8 @@ export default function Home() {
           <img
             src={ACMlogoHome}
             className="banner"
-            style={{ width: "50%", justify: "center" }}
+            width="50%"
+            style={{ justify: "center" }}
           />
         </div>
         <AboutUs />
