@@ -20,9 +20,10 @@ const MemberCardWrapper = styled.div`
   .teamCardInner {
     background: linear-gradient(
         0deg,
-        rgba(44, 43, 43, 0.2) 0%,
-        rgba(44, 43, 43, 0.1) 10%,
-        rgb(0, 0, 0, 0) 100%
+        rgba(44, 43, 43, 1),
+        rgba(44, 43, 43, 0.7),
+        rgba(44, 43, 43, 0.4),
+        rgba(44, 43, 43, 0)
       ),
       url(${(props) => props.img});
     background-position: center;
@@ -37,7 +38,7 @@ const MemberCardWrapper = styled.div`
 
   .name {
     padding: 5px;
-    margin-top: 120px;
+    margin-top: 150px;
     text-align: center;
     font-size: 1.5rem;
     color: rgb(223, 223, 223);

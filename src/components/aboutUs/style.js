@@ -48,8 +48,8 @@ const AboutUsWrapper = styled.div`
   }
 
   .section {
-    font-size: 1.1rem;
-    padding: 200px 80px;
+    font-size: 1.2rem;
+    padding: 140px 80px;
   }
 
   .section-light {
@@ -83,7 +83,7 @@ const AboutUsWrapper = styled.div`
 
   .heading {
     display: flex;
-    font-size: 35px;
+    font-size: 2.2rem;
   }
 
   .main-text {

@@ -9,7 +9,8 @@ const TimelineWrapper = styled.div`
   // align-items: center;
 
   .timeline-main {
-    max-width: 70%;
+    width: 100%;
+    // max-width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
