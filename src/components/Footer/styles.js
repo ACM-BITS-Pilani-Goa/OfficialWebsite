@@ -1,65 +1,38 @@
 import styled from "styled-components";
 
-export const Box = styled.div`
-  padding: 20px 80px;
-  align-items: center;
-  background: black;
-  position: absolute;
-  width: 100%;
-
-  @media (max-width: 1000px) {
-    padding: 20px 20px;
+const FooterWrapper = styled.div`
+  .head {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    background: black;
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+  .divide {
+    display: flex;
+    justify-content: center;
+    background: black;
+    padding-bottom: 35px;
+  }
+  .left-half {
+    margin-right: 69px;
+  }
+  .right-half {
+    margin-left: 69px;
+  }
+  .fontL {
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
+  .fontR {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 900;
   }
 `;
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  /* background: red; */
-`;
-
-export const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  margin-left: 60px;
-`;
-
-export const Row = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
-  grid-gap: 50px;
-
-  @media (max-width: 1000px) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-`;
-
-export const FooterLink = styled.a`
-  color: #fff;
-  margin-bottom: 0px;
-  font-size: 18px;
-  @media (max-width: 378px) {
-    font-size: 15px;
-  }
-  text-decoration: none;
-
-  &:hover {
-    color: blue;
-    transition: 200ms ease-in;
-  }
-`;
-
-export const Heading = styled.p`
-  @media (max-width: 378px) {
-    font-size: 15px;
-  }
-  color: #fff;
-  font-weight: bold;
-`;
+export default FooterWrapper;

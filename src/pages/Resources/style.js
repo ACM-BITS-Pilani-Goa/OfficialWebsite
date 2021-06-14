@@ -4,6 +4,7 @@ const ResourceWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  z-index: 1;
   align-items: center;
   // background-color: rgb(33, 194, 236);
   background-image: linear-gradient(

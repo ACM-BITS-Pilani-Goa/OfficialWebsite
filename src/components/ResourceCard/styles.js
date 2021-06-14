@@ -30,6 +30,7 @@ const ResourceWrapper = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    z-index: 1;
     transition: transform 0.3s;
     border-radius: 5px;
     box-shadow: 0 7px 30px -15px #1a2638;
@@ -60,6 +61,8 @@ const ResourceWrapper = styled.div`
 
   .socialIconContainer {
     z-index: -1;
+    display: flex;
+    justify-content: center;
     background: white;
     position: relative;
     bottom: 55px;

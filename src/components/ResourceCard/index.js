@@ -23,7 +23,7 @@ const ResourceCard = ({
         <p className="post">
           <b>{desc}</b>
         </p>
-        <p className="tap">Visit</p>
+        <p className="tap">Tap to view link</p>
       </div>
       <div className="socialIconContainer">
         <div className="icon">
