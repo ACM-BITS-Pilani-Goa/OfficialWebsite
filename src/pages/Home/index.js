@@ -8,7 +8,11 @@ export default function Home() {
     <>
       <HomeWrapper>
         <div className="Bdome">
-          <img src={ACMlogoHome} style={{ width: "50%", justify: "center" }} />
+          <img
+            src={ACMlogoHome}
+            className="banner"
+            style={{ width: "50%", justify: "center" }}
+          />
         </div>
         <Timeline />
       </HomeWrapper>
