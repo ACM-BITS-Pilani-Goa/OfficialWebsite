@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import img1 from "./img/image1.jpeg";
-import img2 from "./img/image2.jpeg";
-import img3 from "./img/image3.jpg";
+import img1 from "../../images/image1.jpeg";
+import img2 from "../../images/image2.jpeg";
+import img3 from "../../images/image3.jpg";
 
 const AboutUsWrapper = styled.div`
   body,
@@ -56,11 +56,19 @@ const AboutUsWrapper = styled.div`
   .section-light {
     background-color: #f4f4f4;
     color: #666;
+    font-size: 1.5rem;
+  }
+  .section-light h2 {
+    font-size: 3rem;
   }
 
   .section-dark {
     background-color: #282e34;
     color: #ddd;
+    font-size: 1.5rem;
+  }
+  .section-dark h2 {
+    font-size: 3rem;
   }
 
   .ptext {
