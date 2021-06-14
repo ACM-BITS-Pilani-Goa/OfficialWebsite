@@ -11,7 +11,7 @@ const HomeEvent = () => {
     <HomeEventWrapper>
       <div className="section" id="events">
         <div className="section-title">
-          <span>Events</span>
+          <span>Recent Event</span>
         </div>
         <div className="section-row">
           <div className="events-container">
