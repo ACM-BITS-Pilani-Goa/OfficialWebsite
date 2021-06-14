@@ -14,10 +14,13 @@ const Navbar = () => {
   };
 
   const handleScroll = () => {
-    if (window.scrollY > 20) {
-      document.querySelector(".navbar").className = "navbar scroll";
+    if (window.scrollY > 20 && window.innerWidth > 960) {
+      console.log(window.innerWidth);
+      document.querySelector("nav").className = "navbar scroll";
+    } else if (window.innerWidth > 960) {
+      document.querySelector("nav").className = "navbar";
     } else {
-      document.querySelector(".navbar").className = "navbar";
+      document.querySelector("nav").className = "navbar1";
     }
   };
 
@@ -30,7 +33,7 @@ const Navbar = () => {
 
   return (
     <NavWrapper>
-      <nav className="navbar">
+      <nav className={click ? "navbar1" : "navbar"}>
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img src={ACMnav} className="acm-logo" style={{ width: "50%" }} />
         </Link>
@@ -60,15 +63,6 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/team" className="nav-links" onClick={closeMobileMenu}>
               Team
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/contact-us"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Contact Us
             </Link>
           </li>
         </ul>

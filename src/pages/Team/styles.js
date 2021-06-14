@@ -5,7 +5,7 @@ const TeamWrapper = styled.div`
   justify-content: center;
   width: 100%;
   align-items: center;
-  background-color: white;
+  background-color: #90ee90;
   .holder {
     display: flex;
     justify-content: space-evenly;
