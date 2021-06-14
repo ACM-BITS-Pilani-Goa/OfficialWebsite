@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ResourceWrapper = styled.div`
   height: 250px;
-  width: 30%;
+  width: 40%;
   background: white;
   border-radius: 5px;
   box-shadow: 0 7px 30px -15px #1a2638;
@@ -40,7 +40,7 @@ const ResourceWrapper = styled.div`
     padding: 5px;
     margin-top: 120px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(223, 223, 223);
   }
 
@@ -55,7 +55,7 @@ const ResourceWrapper = styled.div`
   .tap {
     text-align: center;
     color: rgb(209, 209, 209);
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
 
   .socialIconContainer {
@@ -63,6 +63,8 @@ const ResourceWrapper = styled.div`
     background: white;
     position: relative;
     bottom: 55px;
+    display: flex;
+    justify-content: center;
   }
 
   .socialIconWrapper {

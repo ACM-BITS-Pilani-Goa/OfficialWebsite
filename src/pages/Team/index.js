@@ -47,7 +47,7 @@ const Team = () => {
     {
       name: "Siddhi",
       title: "",
-      linkedin: "",
+      linkedin: "https://in.linkedin.com/in/siddhi-parashar-168a29193",
       github: "https://github.com/siddhipiddi",
       img: `${siddhi}`,
     },
@@ -55,7 +55,7 @@ const Team = () => {
       name: "Sidhant",
       title: "",
       linkedin: "https://in.linkedin.com/in/sidhantchoudhary",
-      github: "",
+      github: "https://github.com/sidhant0720",
       img: `${sidhant}`,
     },
     {

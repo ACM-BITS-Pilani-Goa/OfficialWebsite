@@ -1,24 +1,17 @@
 import styled from "styled-components";
-import resource from "./img/resource.jpeg";
 
 const ResourceWrapper = styled.div`
-  .resourcePic {
-    background-image: url(${resource});
-    opacity: 1;
-    height: 93vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-  .white {
-    color: white;
-  }
-  .holder {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  // background-color: rgb(33, 194, 236);
+  background-image: linear-gradient(
+    180deg,
+    rgba(33, 194, 236, 1) 0%,
+    rgba(33, 194, 236, 0) 15%
+  );
+  .holding {
     display: flex;
     justify-content: space-evenly;
     position: relative;
@@ -26,9 +19,12 @@ const ResourceWrapper = styled.div`
     max-width: 1400px;
     flex-wrap: wrap;
   }
-  .base {
-    background: red;
-    border-radius: 10px;
+  .heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #0e7cc1;
   }
 `;
 

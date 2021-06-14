@@ -4,8 +4,8 @@ import ResourceCardWrapper from "./styles";
 
 const ResourceCard = ({
   name = "",
-  title = "TEAM Resource",
-  link_github = "#",
+  desc = "TEAM Resource",
+  link = "#",
   img = "https://picsum.photos/200",
 }) => {
   return (
@@ -21,13 +21,13 @@ const ResourceCard = ({
       >
         <p className="name">{name}</p>
         <p className="post">
-          <b>{title}</b>
+          <b>{desc}</b>
         </p>
-        <p className="tap">(TAP TO VIEW MORE)</p>
+        <p className="tap">Tap to view link</p>
       </div>
       <div className="socialIconContainer">
         <div className="icon">
-          <a aria-label="Github" href={link_github}>
+          <a aria-label="Github" href={link}>
             <FaGithub color="#000" />
           </a>
         </div>
