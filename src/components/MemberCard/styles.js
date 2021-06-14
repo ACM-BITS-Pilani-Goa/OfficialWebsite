@@ -25,7 +25,7 @@ const MemberCardWrapper = styled.div`
         rgba(44, 43, 43, 0.4),
         rgba(44, 43, 43, 0)
       ),
-      url(${(props) => props.img});
+      url('${(props) => props.img}');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
