@@ -13,6 +13,8 @@ import mehul from "../../images/mehul.jpeg";
 import kanishq from "../../images/kanishq.jpg";
 import vaibhav from "../../images/vaibhav.jpg";
 import TeamWrapper from "./styles";
+import Footer from "../../components/Footer/index";
+import Navbar from "../../components/Navbar";
 
 const Team = () => {
   const members = [
@@ -114,14 +116,18 @@ const Team = () => {
   ));
 
   return (
-    <TeamWrapper>
-      <div className="holder" style={{ marginTop: "8vw" }}>
-        <h1 className="heading">Founding Team</h1>
-        <br />
-        <br />
-        {memberList}
-      </div>
-    </TeamWrapper>
+    <>
+    <Navbar />
+      <TeamWrapper>
+        <div className="holder" style={{ marginTop: "8vw" }}>
+          <h1 className="heading">Founding Team</h1>
+          <br />
+          <br />
+          {memberList}
+        </div>
+      </TeamWrapper>
+      <Footer />
+    </>
   );
 };
 

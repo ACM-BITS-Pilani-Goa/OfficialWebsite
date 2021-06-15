@@ -1,15 +1,17 @@
 import React from "react";
 import Zoom from "react-reveal/Zoom";
 import config from "react-reveal/globals";
-
+import Footer from "../../components/Footer/index";
 config({ ssrFadeout: true });
 // import AboutUsWrapper from "./style";
 import ACMlogo from "../../images/ACM logo textRight.svg";
 import EventsWrapperMain from "./stylenext";
+import Navbar from "../../components/Navbar";
 
 export default function AboutUs() {
   return (
     <>
+    <Navbar />
       {/* <AboutUsWrapper>
         <div className="Bdome">
           <div
@@ -100,6 +102,7 @@ export default function AboutUs() {
           </div>
         </div>
       </EventsWrapperMain>
+      <Footer />
     </>
   );
 }

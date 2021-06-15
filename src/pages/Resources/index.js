@@ -6,6 +6,8 @@ import githubpic from "../../images/github.jpg";
 import wiki from "../../images/wiki.jpg";
 import blog from "../../images/coming.jpeg";
 import form from "../../images/form.jpg";
+import Footer from "../../components/Footer/index";
+import Navbar from "../../components/Navbar";
 
 export default function Resource() {
   const resources = [
@@ -51,16 +53,20 @@ export default function Resource() {
   ));
 
   return (
-    <div>
-      <ResourceWrapper>
-        <div className="holding" style={{ marginTop: "8vw" }}>
-          <h1 className="heading">Resources</h1>
-          <br />
-          <br />
-          {resourceList}
-        </div>
-        {/*<CollapsibleTable />*/}
-      </ResourceWrapper>
-    </div>
+    <>
+    <Navbar />
+      <div>
+        <ResourceWrapper>
+          <div className="holding" style={{ marginTop: "8vw" }}>
+            <h1 className="heading">Resources</h1>
+            <br />
+            <br />
+            {resourceList}
+          </div>
+          {/*<CollapsibleTable />*/}
+        </ResourceWrapper>
+      </div>
+      <Footer />
+    </>
   );
 }
