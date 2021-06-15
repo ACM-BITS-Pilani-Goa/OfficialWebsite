@@ -8,9 +8,8 @@ import AboutUs from "../../components/aboutUs/index";
 // import HomeEvent from "../../components/homeEvents";
 import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
-import BDOME from "../../images/Bdome.png";
 
-export default function Home({ load }) {
+export default function Home({ load, BDOME }) {
   const BdomeWrap = styled.div`
     .Bdome {
       background: rgb(0, 0, 0);
