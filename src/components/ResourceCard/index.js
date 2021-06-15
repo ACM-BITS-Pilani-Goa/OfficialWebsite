@@ -27,7 +27,7 @@ const ResourceCard = ({
       </div>
       <div className="socialIconContainer">
         <div className="icon">
-          <a aria-label="Github" href={link}>
+          <a aria-label="Github" href={link} target="_blank" rel="noreferrer">
             <FaGithub color="#000" />
           </a>
         </div>

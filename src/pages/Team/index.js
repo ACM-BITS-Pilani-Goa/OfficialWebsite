@@ -52,6 +52,13 @@ const Team = () => {
       img: `${siddhi}`,
     },
     {
+      name: "Devesh",
+      title: "",
+      linkedin: "https://www.linkedin.com/in/devesh-kumar-529982198/",
+      github: "https://github.com/Devesh21700Kumar",
+      img: `${devesh}`,
+    },
+    {
       name: "Sidhant",
       title: "",
       linkedin: "https://in.linkedin.com/in/sidhantchoudhary",
@@ -64,13 +71,6 @@ const Team = () => {
       linkedin: "https://in.linkedin.com/in/rks-1410",
       github: "https://github.com/ritvij14",
       img: `${ritvij}`,
-    },
-    {
-      name: "Devesh",
-      title: "",
-      linkedin: "https://www.linkedin.com/in/devesh-kumar-529982198/",
-      github: "https://github.com/Devesh21700Kumar",
-      img: `${devesh}`,
     },
     {
       name: "Arnav",
