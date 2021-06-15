@@ -31,9 +31,14 @@ const ResourceCard = ({
           <a href={link} target="_blank" rel="noreferrer">
             {icon == "FaGithub" ? (
               <FaGithub color="#000" />
-            ) : (
+            ) : icon == "FaGlobe" ? (
               <FaGlobe color="#0e7cc1" />
+            ) : (
+              <i className="fab fa-wpforms" />
             )}
+            {
+              // }<i class="fab fa-wpforms"></i>
+            }
           </a>
         </div>
       </div>

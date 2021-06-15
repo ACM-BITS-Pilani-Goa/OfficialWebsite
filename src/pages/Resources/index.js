@@ -29,6 +29,13 @@ export default function Resource() {
       img: `${blog}`,
       icon: "FaGlobe",
     },
+    {
+      name: "Form",
+      desc: "Coming soon",
+      link: "#",
+      img: `${blog}`,
+      icon: "FaForm",
+    },
   ];
 
   const resourceList = resources.map((resource, index) => (

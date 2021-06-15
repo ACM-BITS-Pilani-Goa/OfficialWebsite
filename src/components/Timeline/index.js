@@ -18,7 +18,7 @@ const Timeline = () => {
         >
           <div className="event-content">
             <h3>Chapter Launch</h3>
-            <p>ACM BITS Pilani Goa Chaoter Started</p>
+            <p>ACM BITS Pilani Goa Chapter Started</p>
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -31,8 +31,8 @@ const Timeline = () => {
             <h3>BITS Wiki Launched</h3>
             <p>
               We launched a Wiki to act as one-stop portal to get all your
-              queries answered without having to put up messages on plethora of
-              groups. <a href="/resources">Read More</a>
+              queries answered without having to put up messages on a plethora
+              of groups. <a href="/resources">Read More</a>
             </p>
           </div>
         </VerticalTimelineElement>
@@ -43,7 +43,7 @@ const Timeline = () => {
           iconStyle={{ background: "rgb(33, 150, 243)" }}
         >
           <div className="event-content">
-            <h3>GitHub Oragnisation Launched</h3>
+            <h3>GitHub Organisation Launched</h3>
             <p>
               We launched a GitHub organisation to accumulate best repositories
               available. <a href="/resources">Read More</a>
