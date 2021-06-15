@@ -28,7 +28,7 @@ const ResourceWrapper = styled.div`
       url("${(props) => props.img}");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     overflow: hidden;
     transition: transform 0.3s;
     border-radius: 5px;

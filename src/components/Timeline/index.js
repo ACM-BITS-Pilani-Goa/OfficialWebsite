@@ -32,7 +32,7 @@ const Timeline = () => {
             <p>
               We launched a Wiki to act as one-stop portal to get all your
               queries answered without having to put up messages on a plethora
-              of groups. <a href="/resources">Read More</a>
+              of groups. The wiki has topics for major FAQs.<a href="/resources">Check it out!</a>
             </p>
           </div>
         </VerticalTimelineElement>
@@ -46,7 +46,7 @@ const Timeline = () => {
             <h3>GitHub Organisation Launched</h3>
             <p>
               We launched a GitHub organisation to accumulate best repositories
-              available. <a href="/resources">Read More</a>
+              available. <a href="/resources">Check it out!</a>
             </p>
           </div>
         </VerticalTimelineElement>
