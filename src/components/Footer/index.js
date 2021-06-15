@@ -1,66 +1,62 @@
 import React from "react";
 import { FooterWrapper } from "./styles";
+import Grid from "@material-ui/core/Grid";
 
 const Footer = () => {
   return (
     <FooterWrapper>
-      <h1>ACM BITS Pilani Goa chapter</h1>
-      <svg
-        width="309"
-        height="2"
-        viewBox="0 0 309 2"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <line y1="1.02563" x2="308.002" y2="1.02563" stroke="white" />
-      </svg>
-      <div className="footer-section">
-        <div className="footer-column">
-          <h2>Contact us:</h2>
-          <a href="https://www.linkedin.com/company/acm-bits-pilani-goa-chapter">
-            <i
-              className="fab fa-linkedin"
-              style={{ marginTop: "20px", color: "white", fontSize: "27px" }}
-            >
-              <span
-                style={{ marginLeft: "10px", color: "white", fontSize: "20px" }}
-              >
-                BITS Goa ACM on Linkedin
-              </span>
-            </i>
-          </a>
-          <a href="admin@bitsg.acm.org" style={{ marginRight: "37px" }}>
-            <i
-              className="fas fa-envelope"
-              style={{ marginTop: "20px", color: "white", fontSize: "27px" }}
-            >
-              <span
-                style={{ marginLeft: "10px", color: "white", fontSize: "20px" }}
-              >
-                admin@bitsg.acm.org
-              </span>
-            </i>
-          </a>
-        </div>
-        <div className="footer-column">
-          <h2>Where to find us:</h2>
-          <i
-            className="fas fa-map-marker-alt"
-            style={{ marginTop: "20px", color: "white", fontSize: "27px" }}
-          >
-            <span>
-              <span
-                style={{ marginLeft: "10px", color: "white", fontSize: "20px" }}
-              >
-                BITS Pilani, K.K. Birla Goa campus,
-                <br />
-                Zuarinagar, Sancoale, Goa
-              </span>
-            </span>
-          </i>
-        </div>
+      <div className="head">
+        <h2 style={{ color: "white", borderBottom: "2px solid white" }}>
+          ACM BITS Pilani Goa Chapter
+        </h2>
       </div>
+      <Grid container spacing={0} style={{ backgroundColor: "black" }}>
+        <Grid item xs={12} sm={6}>
+          <div className="left-half">
+            <p style={{ color: "white" }} className="fontL">
+              <b>Contact us:</b>
+            </p>
+            <p className="fontL1">
+              {"  "}
+              <i style={{ color: "white" }} className="fab fa-linkedin-in">
+                <span style={{ marginLeft: "10px" }}>
+                  BITS Goa ACM on Linkedin
+                </span>
+              </i>
+            </p>
+            <p className="fontL2">
+              <i style={{ color: "white" }} className="far fa-envelope">
+                <span style={{ marginLeft: "10px" }}>admin@bitsg.acm.org</span>
+              </i>
+            </p>
+          </div>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <div className="right-half">
+            <p style={{ color: "white" }} className="fontR">
+              <b>Where to find us?</b>
+            </p>
+            <p style={{ color: "white" }} className="fontR1">
+              <a
+                style={{ color: "white", textDecoration: "none" }}
+                href="https://www.google.com/maps/d/u/0/viewer?ie=UTF8&t=m&oe=UTF8&msa=0&mid=1hWnxlejcCPxEN84cH8goANCl0nM&ll=15.390011999999993%2C73.87745600000001&z=17"
+              >
+                <i className="fas fa-map-marker-alt" aria-hidden="true">
+                  {"     "} BITS Pilani, K.K. Birla
+                  <br />
+                  Goa campus,
+                  <br />
+                  {"     "} Zuarinagar, Sancoale, Goa
+                </i>
+              </a>
+            </p>
+          </div>
+        </Grid>
+      </Grid>
+      {/* <div className="divide">
+      </div>*/}
     </FooterWrapper>
   );
 };
+
 export default Footer;

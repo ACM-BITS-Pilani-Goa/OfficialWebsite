@@ -1,27 +1,52 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
-  padding: 20px 80px;
-  align-items: center;
-  background: black;
-  position: absolute;
-  width: 100%;
-
-  h1,
-  h2 {
-    color: white;
-    text-align: center;
-  }
-  svg {
-    display: block;
-    margin: 20px auto;
-  }
-  .footer-section {
+  .head {
     display: flex;
-    margin: 0px 400px;
+    justify-content: center;
+    text-decoration: underline;
+    background: black;
+    padding-top: 30px;
+    padding-bottom: 35px;
   }
-  .footer-column {
-    flex: 50%;
-    text-align: center;
+  .divide {
+    display: flex;
+    justify-content: center;
+    background: black;
+    padding-bottom: 35px;
+  }
+  .left-half {
+  }
+  .right-half {
+  }
+  .fontL {
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .fontR {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  .fontR1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 33px;
+  }
+  .fontL1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-left: 28px;
+  }
+  .fontL2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
   }
 `;
