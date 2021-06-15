@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import BDOME from "../../images/Bdome.png";
+// import BDOME from "../../images/Bdome.png";
 const HomeWrapper = styled.div`
   .ACMlogo {
     position: absolute;
     align-self: center;
   }
-  .Bdome {
+  /*.Bdome {
     background: rgb(0, 0, 0);
     background: radial-gradient(
         circle,
@@ -13,7 +13,7 @@ const HomeWrapper = styled.div`
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url(${BDOME});
+      url();
     opacity: 1;
     height: 100vh;
     background-attachment: fixed;
@@ -30,7 +30,7 @@ const HomeWrapper = styled.div`
     .Bdome {
       background-attachment: scroll;
     }
-  }
+  }*/
   .banner:hover {
     animation: bounce 0.5s infinite;
     -webkit-animation: bounce 0.5s infinite;
