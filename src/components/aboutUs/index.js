@@ -10,7 +10,7 @@ export default function AboutUs() {
     <>
       <AboutUsWrapper>
         <section className="section section-light">
-          <Zoom top>
+          <Zoom>
             <div>
               <div className="heading">WHO ARE WE?</div>
               <br />
@@ -42,7 +42,7 @@ export default function AboutUs() {
           </div>
         </div> */}
         <section className="section section-dark">
-          <Zoom top>
+          <Zoom>
             <div>
               <div className="heading">OUR VISION</div>
               <br />

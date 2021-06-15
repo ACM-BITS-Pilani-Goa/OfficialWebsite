@@ -32,7 +32,7 @@ export default function AboutUs() {
       <EventsWrapperMain>
         <div className="section" id="events">
           <div className="section-row">
-            <h1 className="heading" style={{ marginTop: "8vw" }}>
+            <h1 className="heading" style={{ marginTop: "11vw" }}>
               Events
             </h1>
             <div className="events-container">
@@ -59,7 +59,7 @@ export default function AboutUs() {
                 </div>
               </Zoom>
               <hr />
-              <Zoom>
+              {/*<Zoom>
                 <div
                   className="event-container container even-event"
                   style={{ paddingBottom: "20px" }}
@@ -81,6 +81,7 @@ export default function AboutUs() {
                   </div>
                 </div>
               </Zoom>
+              */}
             </div>
           </div>
         </div>
