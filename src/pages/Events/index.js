@@ -12,6 +12,7 @@ export default function AboutUs() {
       <AboutUsWrapper>
         <div className="Bdome">
           <div
+            className="animate"
             style={{
               display: "flex",
               justifyContent: "center",

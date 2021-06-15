@@ -38,6 +38,8 @@ const Footer = () => {
             </p>
             <p style={{ color: "white" }} className="fontR1">
               <a
+                target="_blank"
+                rel="noreferrer"
                 style={{ color: "white", textDecoration: "none" }}
                 href="https://www.google.com/maps/d/u/0/viewer?ie=UTF8&t=m&oe=UTF8&msa=0&mid=1hWnxlejcCPxEN84cH8goANCl0nM&ll=15.390011999999993%2C73.87745600000001&z=17"
               >
