@@ -29,12 +29,22 @@ const MemberCard = ({
       <div className="socialIconContainer">
         <div className="socialIconWrapper">
           <div className="icon">
-            <a aria-label="LinkedIn" href={link_linkedin}>
+            <a
+              aria-label="LinkedIn"
+              href={link_linkedin}
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinkedin />
             </a>
           </div>
           <div className="icon">
-            <a aria-label="Github" href={link_github}>
+            <a
+              aria-label="Github"
+              href={link_github}
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub color="#000" />
             </a>
           </div>
