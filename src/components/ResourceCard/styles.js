@@ -28,7 +28,7 @@ const ResourceWrapper = styled.div`
       url("${(props) => props.img}");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     overflow: hidden;
     transition: transform 0.3s;
     border-radius: 5px;
@@ -50,6 +50,12 @@ const ResourceWrapper = styled.div`
     margin-bottom: 0.2rem;
     line-height: 1;
     font-size: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .name {
+      margin-top: 85px;
+    }
   }
 
   .tap {

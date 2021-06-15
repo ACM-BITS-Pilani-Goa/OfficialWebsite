@@ -47,10 +47,15 @@ export default function AboutUs() {
                   </div>
                   <div className="event-body">
                     <p>
-                      After a lot of discussions and ideas shared, we finally
-                      
+
+                     As of 16th June 2021, we have officially launched the ACM
+                      BITS Pilani Goa Student Chapter.
                       <br />
-                      came together with this organization. 
+                      More than 2 months in setup and registration, we pledge to
+                      actively work to create a hub of computer science
+                      enthusiasts solely based on passion and interest.
+                      <br />
+                     
                       <br />
                       <br /> We plan out events and activities which will bring students together with the industry professionals associated with ACM.
                       <br/>
@@ -60,6 +65,8 @@ export default function AboutUs() {
                       <br/>
                       <br /> <a href="https://wiki.bitsg.hosting.acm.org/wiki/index.php/Main_Page" target="blank">Wiki</a> as one-stop portal to get all your queries answered without having to put up messages on a plethora of groups.
                       
+
+                     
                     </p>
                     <img className="event-image" src={`${ACMlogo}`} />
                   </div>
