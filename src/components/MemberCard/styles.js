@@ -21,9 +21,8 @@ const MemberCardWrapper = styled.div`
   .teamCardInner {
     background: linear-gradient(
         0deg,
-        rgba(44, 43, 43, 1),
-        rgba(44, 43, 43, 0.7),
-        rgba(44, 43, 43, 0.4),
+        rgba(44, 43, 43, 0.5),
+        rgba(44, 43, 43, 0),
         rgba(44, 43, 43, 0)
       ),
       url(${(props) => props.img});

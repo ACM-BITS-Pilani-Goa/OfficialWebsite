@@ -3,13 +3,14 @@ import Zoom from "react-reveal/Zoom";
 import config from "react-reveal/globals";
 
 config({ ssrFadeout: true });
-import AboutUsWrapper from "./style";
+// import AboutUsWrapper from "./style";
+import ACMlogo from "../../images/ACM logo textRight.svg";
 import EventsWrapperMain from "./stylenext";
 
 export default function AboutUs() {
   return (
     <>
-      <AboutUsWrapper>
+      {/* <AboutUsWrapper>
         <div className="Bdome">
           <div
             className="animate"
@@ -27,10 +28,13 @@ export default function AboutUs() {
             Events
           </div>
         </div>
-      </AboutUsWrapper>
+      </AboutUsWrapper> */}
       <EventsWrapperMain>
         <div className="section" id="events">
           <div className="section-row">
+            <h1 className="heading" style={{ marginTop: "8vw" }}>
+              Events
+            </h1>
             <div className="events-container">
               <Zoom>
                 <div
@@ -44,28 +48,39 @@ export default function AboutUs() {
                   <div className="event-body">
                     <p>
                       After a lot of discussions and ideas shared, we finally
-                      came together with this organization. After a lot of
-                      discussions and ideas shared, we finally came together
-                      with this organization. After a lot of discussions and
-                      ideas shared, we finally came together with this
-                      organization.
-                      <br />
                       <br />
                       After a lot of discussions and ideas shared, we together
                       with this organization.
-                      <br />
                       <br /> After a lot of discussions and ideas shared, we
                       finally came together with this organization.
                     </p>
-                    <img
-                      className="event-image"
-                      src="https://images.unsplash.com/photo-1623443726108-176440e143e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
-                      alt=""
-                    />
+                    <img className="event-image" src={`${ACMlogo}`} />
                   </div>
                 </div>
               </Zoom>
               <hr />
+              <Zoom>
+                <div
+                  className="event-container container even-event"
+                  style={{ paddingBottom: "20px" }}
+                >
+                  <div className="event-title">
+                    {" "}
+                    <span> Foundations Laid </span>
+                  </div>
+                  <div className="event-body">
+                    <p>
+                      After a lot of discussions and ideas shared, we finally
+                      <br />
+                      After a lot of discussions and ideas shared, we together
+                      with this organization.
+                      <br /> After a lot of discussions and ideas shared, we
+                      finally came together with this organization.
+                    </p>
+                    <img className="event-image" src={`${ACMlogo}`} />
+                  </div>
+                </div>
+              </Zoom>
             </div>
           </div>
         </div>

@@ -3,7 +3,8 @@ import Timeline from "../../components/Timeline/index";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
 import HomeWrapper from "./style";
 import AboutUs from "../../components/aboutUs/index";
-import HomeEvent from "../../components/homeEvents";
+// import Confetti from "../../components/Confetti";
+// import HomeEvent from "../../components/homeEvents";
 
 export default function Home() {
   return (
@@ -18,8 +19,9 @@ export default function Home() {
           />
         </div>
         <AboutUs />
-        <HomeEvent />
+        {/* <HomeEvent /> */}
         <Timeline />
+        {/* <Confetti /> */}
       </HomeWrapper>
     </>
   );
