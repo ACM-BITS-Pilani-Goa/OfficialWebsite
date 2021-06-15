@@ -12,7 +12,7 @@ const AboutUsWrapper = styled.div`
     font-size: 16px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    line-height: 1.8em;
+    // line-height: 1.8em;
     color: #666;
   }
 
@@ -49,7 +49,8 @@ const AboutUsWrapper = styled.div`
 
   .section {
     font-size: 1.2rem;
-    padding: 100px 80px;
+    padding: 50px 80px;
+    text-align: center;
   }
 
   .section-light {
@@ -85,11 +86,12 @@ const AboutUsWrapper = styled.div`
   .heading {
     display: flex;
     font-size: 2.2rem;
+    justify-content: center;
   }
 
   .main-text {
     display: flex;
-    justify-content: left;
+    justify-content: center;
   }
 
   @media screen and (max-width: 768px) {

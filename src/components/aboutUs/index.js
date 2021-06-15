@@ -1,6 +1,6 @@
 import React from "react";
 import AboutUsWrapper from "./style";
-import { Fade } from "react-reveal";
+import { Zoom } from "react-reveal";
 import config from "react-reveal/globals";
 
 config({ ssrFadeout: true });
@@ -10,13 +10,17 @@ export default function AboutUs() {
     <>
       <AboutUsWrapper>
         <section className="section section-light">
-          <Fade left>
+          <Zoom top>
             <div>
               <div className="heading">WHO ARE WE?</div>
               <br />
+            </div>
+          </Zoom>
+          <Zoom bottom>
+            <div>
               <p className="main-text">
                 We are the Association for Computing Machinery (ACM), Student
-                Chapter of BITS Pilani, K. K. Birla Goa campus.
+                Chapter <br /> BITS Pilani, K. K. Birla Goa campus.
               </p>
               <br />
               <p>
@@ -28,7 +32,7 @@ export default function AboutUs() {
                 multiple skills is the best way to stay in this competition.
               </p>
             </div>
-          </Fade>
+          </Zoom>
         </section>
         <div className="pimg1"></div>
         {/* <div className="pimg1"></div> */}
@@ -38,10 +42,14 @@ export default function AboutUs() {
           </div>
         </div> */}
         <section className="section section-dark">
-          <Fade left>
+          <Zoom top>
             <div>
               <div className="heading">OUR VISION</div>
               <br />
+            </div>
+          </Zoom>
+          <Zoom bottom>
+            <div>
               <p>
                 We envision a community, irrespective of barriers of branch,
                 where interest and passion for computers and technology are the
@@ -49,7 +57,7 @@ export default function AboutUs() {
                 advance the profession and make a positive impact.
               </p>
             </div>
-          </Fade>
+          </Zoom>
         </section>
         <div className="pimg2">
           <div className="ptext">

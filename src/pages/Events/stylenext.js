@@ -1,15 +1,30 @@
 import styled from "styled-components";
 
 const EventsWrapperMain = styled.div`
+  background-image: linear-gradient(
+    180deg,
+    rgba(33, 194, 236, 1) 0%,
+    rgba(33, 194, 236, 0) 10%
+  );
+  .heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #0e7cc1;
+  }
   .section {
-    min-height: 90vh;
-    padding: 3vh;
+    // min-height: 90vh;
+    padding: 3vh 0vh 3vh 0vh;
+    width: 100%;
   }
 
   .section > .section-row {
     display: flex;
     align-items: center;
     margin: 0;
+    flex-direction: column;
+    width: 100%;
   }
 
   .section-image img {
@@ -17,27 +32,29 @@ const EventsWrapperMain = styled.div`
     width: 250px;
   }
 
-  .section-row {
-    flex-direction: column;
-  }
-
   #events {
     /* background: #1e2529; */
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 9vh;
-    background: #081526;
-    color: #f5f5f5;
+    // background: #081526;
+    // color: #f5f5f5;
   }
 
   .events-container {
     display: flex;
-    margin-top: 3vh;
+    // margin-top: 3vh;
     flex-direction: column;
+    // background: #081526;
+    padding: 3vh 15vh 3vh 15vh;
+    width: 100%;
   }
 
   .event-title {
     font-size: 2.2em;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    color: #0e7cc1;
   }
 
   .event-footer {
@@ -48,8 +65,8 @@ const EventsWrapperMain = styled.div`
   .event-image {
     max-height: 28vh;
     max-width: 60vw;
-    border: 1px solid grey;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // border: 1px solid grey;
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   @-moz-document url-prefix() {
     .event-image {

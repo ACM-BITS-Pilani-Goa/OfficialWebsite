@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 import ResourceCardWrapper from "./styles";
 
 const ResourceCard = ({
@@ -7,6 +7,7 @@ const ResourceCard = ({
   desc = "TEAM Resource",
   link = "#",
   img = "https://picsum.photos/200",
+  icon = "",
 }) => {
   return (
     <ResourceCardWrapper img={img}>
@@ -27,8 +28,12 @@ const ResourceCard = ({
       </div>
       <div className="socialIconContainer">
         <div className="icon">
-          <a aria-label="Github" href={link} target="_blank" rel="noreferrer">
-            <FaGithub color="#000" />
+          <a href={link} target="_blank" rel="noreferrer">
+            {icon == "FaGithub" ? (
+              <FaGithub color="#000" />
+            ) : (
+              <FaGlobe color="#0e7cc1" />
+            )}
           </a>
         </div>
       </div>

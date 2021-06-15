@@ -23,8 +23,17 @@ const TimelineWrapper = styled.div`
     display: flex;
     font-size: 35px;
     margin-bottom: 40px;
+    color: #0e7cc1;
   }
 
+  .event-content {
+    color: white;
+  }
+
+  .event-content a {
+    text-decoration: none;
+    color: #1e4385;
+  }
   @media screen and (max-width: 992px) {
     .timeline-main {
       max-width: 70%;
