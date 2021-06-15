@@ -32,7 +32,8 @@ const Timeline = () => {
             <p>
               We launched a Wiki to act as one-stop portal to get all your
               queries answered without having to put up messages on a plethora
-              of groups. The wiki has topics for major FAQs.<a href="/resources">Check it out!</a>
+              of groups. The wiki has topics for major FAQs.
+              <a href="/resources">Check it out!</a>
             </p>
           </div>
         </VerticalTimelineElement>

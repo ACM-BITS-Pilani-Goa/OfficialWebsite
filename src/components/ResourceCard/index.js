@@ -16,12 +16,14 @@ const ResourceCard = ({
         style={{
           height: `inherit`,
           padding: `0`,
-          margin: `0`,
+          marginTop: `0px`,
           overflow: `hidden`,
         }}
       >
-        <p className="name">{name}</p>
-        <p className="post">
+        <p style={{}} className="name">
+          {name}
+        </p>
+        <p style={{}} className="post">
           <b>{desc}</b>
         </p>
         <p className="tap">Tap to view link</p>

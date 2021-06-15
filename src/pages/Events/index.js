@@ -47,7 +47,7 @@ export default function AboutUs() {
                   </div>
                   <div className="event-body">
                     <p>
-                      As of 16th June 2021, we've officially launched the ACM
+                      As of 16th June 2021, we have officially launched the ACM
                       BITS Pilani Goa Student Chapter.
                       <br />
                       More than 2 months in setup and registration, we pledge to

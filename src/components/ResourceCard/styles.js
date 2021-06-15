@@ -52,6 +52,12 @@ const ResourceWrapper = styled.div`
     font-size: 1rem;
   }
 
+  @media screen and (max-width: 768px) {
+    .name {
+      margin-top: 85px;
+    }
+  }
+
   .tap {
     text-align: center;
     color: rgb(209, 209, 209);
