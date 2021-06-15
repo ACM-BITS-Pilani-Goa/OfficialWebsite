@@ -5,19 +5,20 @@ import ResourceCard from "../../components/ResourceCard";
 import githubpic from "../../images/github.jpg";
 import wiki from "../../images/wiki.jpg";
 import blog from "../../images/coming.jpeg";
+import form from "../../images/form.jpg";
 
 export default function Resource() {
   const resources = [
     {
       name: "GitHub",
-      desc: "Forks of best open source resources maintained in one place.",
+      desc: "Forks of best open source resources maintained actively in one place.",
       link: "https://github.com/ACM-BITS-Pilani-Goa",
       img: `${githubpic}`,
       icon: "FaGithub",
     },
     {
-      name: "Wiki",
-      desc: "Information.",
+      name: "BITS Wiki",
+      desc: "All the information related to BITS Goa accumulated in one place.",
       link: "https://wiki.bitsg.hosting.acm.org/wiki/index.php/Main_Page",
       img: `${wiki}`,
       icon: "FaGlobe",
@@ -31,9 +32,9 @@ export default function Resource() {
     },
     {
       name: "Form",
-      desc: "Coming soon",
-      link: "#",
-      img: `${blog}`,
+      desc: "Subscription form to join ACM Technews mailing lists.",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdLmpVQfhBI3GI5xM9gIMqv-dNoH72zrQq5kMHBn4i11_TlsA/viewform?usp=sf_link",
+      img: `${form}`,
       icon: "FaForm",
     },
   ];
