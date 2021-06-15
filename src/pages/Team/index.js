@@ -18,14 +18,14 @@ const Team = () => {
   const members = [
     {
       name: "Jayant",
-      title: "Coordinator",
+      title: "Chair",
       linkedin: "https://www.linkedin.com/in/jayant-chaudhary-a567741a7/",
       github: "https://github.com/jayant1616",
       img: `${jayant}`,
     },
     {
       name: "Aastha",
-      title: "Sub-coordinator",
+      title: "Vice-Chair",
       linkedin: "https://in.linkedin.com/in/aastha-rastogi",
       github: "https://github.com/astelrastogi",
       img: `${aastha}`,
