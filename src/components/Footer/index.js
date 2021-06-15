@@ -16,15 +16,24 @@ const Footer = () => {
             <p style={{ color: "white" }} className="fontL">
               <b>Contact us:</b>
             </p>
-            <p className="fontL1">
-              {"  "}
-              <i style={{ color: "white" }} className="fab fa-linkedin-in">
+            <p style={{ color: "white" }} className="fontL1" >
+            <a
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "white", textDecoration: "none" }}
+                href="https://www.linkedin.com/company/acm-bits-pilani-goa-chapter"
+              >
+                
+              
+              <i  className="fab fa-linkedin-in">
                 <span style={{ marginLeft: "10px" }}>
                   BITS Goa ACM on Linkedin
                 </span>
               </i>
+              </a>
             </p>
             <p className="fontL2">
+              
               <i style={{ color: "white" }} className="far fa-envelope">
                 <span style={{ marginLeft: "10px" }}>admin@bitsg.acm.org</span>
               </i>

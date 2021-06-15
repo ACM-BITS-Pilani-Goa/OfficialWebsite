@@ -43,8 +43,8 @@ const NavWrapper = styled.div`
     font-size: 2rem;
   }
   .acm-logo {
-    -webkit-animation: rotateOnY 2s infinite linear;
-    animation: rotateOnY 2s infinite linear;
+    -webkit-animation: rotateOnY 5s infinite linear;
+    animation: rotateOnY 5s infinite linear;
   }
 
   .fa-firstdraft {
