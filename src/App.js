@@ -19,6 +19,7 @@ const App = () => {
         <Route path="/resources" component={Resources} />
         <Route path="/team" component={Team} />
       </Switch>
+      <Footer />
       {/* <Footer /> */}
     </Router>
   );
