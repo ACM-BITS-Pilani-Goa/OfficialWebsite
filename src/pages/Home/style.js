@@ -5,7 +5,6 @@ const HomeWrapper = styled.div`
     position: absolute;
     align-self: center;
   }
-
   .Bdome {
     background: rgb(0, 0, 0);
     background: radial-gradient(

@@ -9,6 +9,7 @@ import AboutUs from "../../components/aboutUs/index";
 export default function Home() {
   return (
     <>
+      {" "}
       <HomeWrapper>
         <div className="Bdome">
           <img
