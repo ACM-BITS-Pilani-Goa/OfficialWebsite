@@ -26,6 +26,12 @@ const HomeWrapper = styled.div`
     align-items: center;
     display: flex;
   }
+
+  @media (max-width: 390px) {
+    .Bdome {
+      background-attachment: scroll;
+    }
+  }
   .banner:hover {
     animation: bounce 0.5s infinite;
     -webkit-animation: bounce 0.5s infinite;
