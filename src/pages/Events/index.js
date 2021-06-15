@@ -48,11 +48,18 @@ export default function AboutUs() {
                   <div className="event-body">
                     <p>
                       After a lot of discussions and ideas shared, we finally
+                      
                       <br />
-                      After a lot of discussions and ideas shared, we together
-                      with this organization.
-                      <br /> After a lot of discussions and ideas shared, we
-                      finally came together with this organization.
+                      came together with this organization. 
+                      <br />
+                      <br /> We plan out events and activities which will bring students together with the industry professionals associated with ACM.
+                      <br/>
+                      <br /> <a href="https://github.com/ACM-BITS-Pilani-Goa" target="blank">Github organisation</a> that accumulates best tech-repositories available.
+                      <br/>
+                      <br /> Subscribe to ACM Tech-Newsletters <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLmpVQfhBI3GI5xM9gIMqv-dNoH72zrQq5kMHBn4i11_TlsA/viewform" target="blank">here</a>.
+                      <br/>
+                      <br /> <a href="https://wiki.bitsg.hosting.acm.org/wiki/index.php/Main_Page" target="blank">Wiki</a> as one-stop portal to get all your queries answered without having to put up messages on a plethora of groups.
+                      
                     </p>
                     <img className="event-image" src={`${ACMlogo}`} />
                   </div>
