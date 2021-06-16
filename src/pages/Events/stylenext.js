@@ -84,7 +84,7 @@ const EventsWrapperMain = styled.div`
     padding-right: 10vw;
   }
 
-  @media all and (min-width: 769px) {
+  @media all and (min-width: 1251px) {
     .even-event .event-body {
       flex-direction: row-reverse;
     }
@@ -97,9 +97,18 @@ const EventsWrapperMain = styled.div`
     }
   }
 
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 1250px) {
     .events-container {
       flex-flow: row wrap;
+    }
+
+    .events-container {
+      display: flex;
+      // margin-top: 3vh;
+      flex-direction: column;
+      // background: #081526;
+      padding: 3vh 10vh 3vh 10vh;
+      width: 100%;
     }
     /* .event-title {
         text-align: center;
@@ -182,6 +191,14 @@ const EventsWrapperMain = styled.div`
       display: none;
     }
 
+    .events-container {
+      display: flex;
+      // margin-top: 3vh;
+      flex-direction: column;
+      // background: #081526;
+      padding: 3vh 7vh 3vh 5vh;
+      width: 100%;
+    }
     .show-on-mobile {
       display: block;
     }
