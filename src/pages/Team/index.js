@@ -15,8 +15,9 @@ import vaibhav from "../../images/vaibhav.jpg";
 import TeamWrapper from "./styles";
 import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
+import ACMlogoHome from "../../images/ACM logo textRight.svg";
 
-const Team = () => {
+const Team = ({ load }) => {
   const members = [
     {
       name: "Jayant",
@@ -117,16 +118,38 @@ const Team = () => {
 
   return (
     <>
-    <Navbar />
       <TeamWrapper>
-        <div className="holder" style={{ marginTop: "8vw" }}>
-          <h1 className="heading">Founding Team</h1>
-          <br />
-          <br />
-          {memberList}
-        </div>
+        <div
+          className="loadBackground"
+          style={{ display: load ? "flex" : "none" }}
+        >
+          <img
+            src={ACMlogoHome}
+            className="bannerset"
+            width="50%"
+            style={{ justify: "center" }}
+          />
+          <div className>
+            <div className="lds-facebook">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>{" "}
       </TeamWrapper>
-      <Footer />
+      <div style={{ display: load ? "none" : " " }}>
+        <Navbar />
+        <TeamWrapper>
+          <div className="holder" style={{ marginTop: "8vw" }}>
+            <h1 className="heading">Founding Team</h1>
+            <br />
+            <br />
+            {memberList}
+          </div>
+        </TeamWrapper>
+        <Footer />
+      </div>
     </>
   );
 };

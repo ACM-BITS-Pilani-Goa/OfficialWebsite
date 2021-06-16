@@ -8,8 +8,9 @@ import blog from "../../images/coming.jpeg";
 import form from "../../images/form.jpg";
 import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
+import ACMlogoHome from "../../images/ACM logo textRight.svg";
 
-export default function Resource() {
+export default function Resource({ load }) {
   const resources = [
     {
       name: "GitHub",
@@ -54,19 +55,41 @@ export default function Resource() {
 
   return (
     <>
-    <Navbar />
-      <div>
-        <ResourceWrapper>
-          <div className="holding" style={{ marginTop: "8vw" }}>
-            <h1 className="heading">Resources</h1>
-            <br />
-            <br />
-            {resourceList}
+      <ResourceWrapper>
+        <div
+          className="loadBackground"
+          style={{ display: load ? "flex" : "none" }}
+        >
+          <img
+            src={ACMlogoHome}
+            className="bannerset"
+            width="50%"
+            style={{ justify: "center" }}
+          />
+          <div className>
+            <div className="lds-facebook">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
-          {/*<CollapsibleTable />*/}
-        </ResourceWrapper>
+        </div>{" "}
+      </ResourceWrapper>
+      <div style={{ display: load ? "none" : " " }}>
+        <Navbar />
+        <div>
+          <ResourceWrapper>
+            <div className="holding" style={{ marginTop: "8vw" }}>
+              <h1 className="heading">Resources</h1>
+              <br />
+              <br />
+              {resourceList}
+            </div>
+            {/*<CollapsibleTable />*/}
+          </ResourceWrapper>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

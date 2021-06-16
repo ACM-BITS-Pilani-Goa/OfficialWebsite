@@ -123,7 +123,7 @@ const HomeWrapper = styled.div`
     -webkit-animation: bounce 0.5s infinite;
     -moz-animation: bounce 0.5s infinite;
   }
-  
+
   .h2 {
     color: #7c795d;
     font-family: "Trocchi", serif;
@@ -132,13 +132,13 @@ const HomeWrapper = styled.div`
     line-height: 48px;
     margin: 0;
   }
-  
+
   @media screen and (max-width: 768px) {
     .bannerset {
       width: 80%;
     }
   }
-  
+
   @-webkit-keyframes bounce {
     0%,
     100% {

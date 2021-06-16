@@ -15,7 +15,7 @@ const App = () => {
   const [load, setload] = useState(true);
 
   useEffect(async () => {
-    await setTimeout(() => setload(false), 6000);
+    await setTimeout(() => setload(false), 8000);
   }, []);
   return (
     <>
@@ -26,12 +26,11 @@ const App = () => {
             <Route
               path="/"
               exact
-              component={() => <Home load={load} BDOME={BDOME} />}
+              render={() => <Home load={load} BDOME={BDOME} />}
             />
-            <Route path="/events" component={Events} />
-            <Route path="/aboutUs" component={Events} />
-            <Route path="/resources" component={Resources} />
-            <Route path="/team" component={Team} />
+            <Route path="/events" render={() => <Events load={load} />} />
+            <Route path="/resources" render={() => <Resources load={load} />} />
+            <Route path="/team" render={() => <Team load={load} />} />
           </Switch>
           {/* <Footer /> */}
         </Router>
