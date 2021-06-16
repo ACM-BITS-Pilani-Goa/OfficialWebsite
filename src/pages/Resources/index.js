@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ResourceWrapper from "./style";
 // import CollapsibleTable from "../../components/table/index";
 import ResourceCard from "../../components/ResourceCard";
@@ -11,7 +11,10 @@ import Navbar from "../../components/Navbar";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
 import LoadWrapper from "./loadstyles";
 
-export default function Resource({ load }) {
+export default function Resource({ load, setload }) {
+  useEffect(async () => {
+    await setTimeout(() => setload(false), 8000);
+  }, []);
   let display;
   if (load) {
     display = "flex";

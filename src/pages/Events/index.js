@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Zoom from "react-reveal/Zoom";
 import config from "react-reveal/globals";
 import Footer from "../../components/Footer/index";
@@ -10,7 +10,10 @@ import Navbar from "../../components/Navbar";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
 import AboutUsWrapper from "./style";
 
-export default function AboutUs({ load }) {
+export default function AboutUs({ load, setload }) {
+  useEffect(async () => {
+    await setTimeout(() => setload(false), 8000);
+  }, []);
   let display;
   if (load) {
     display = "flex";

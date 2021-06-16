@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MemberCard from "../../components/MemberCard";
 import jayant from "../../images/jayant.jpg";
 import aviral from "../../images/aviral.jpg";
@@ -18,7 +18,10 @@ import Navbar from "../../components/Navbar";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
 import LoadWrapper from "./loadstyles";
 
-const Team = ({ load }) => {
+const Team = ({ load, setload }) => {
+  useEffect(async () => {
+    await setTimeout(() => setload(false), 8000);
+  }, []);
   let display;
   if (load) {
     display = "flex";

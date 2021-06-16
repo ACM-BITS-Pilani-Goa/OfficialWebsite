@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/index";
@@ -14,9 +14,6 @@ const App = () => {
   });
   const [load, setload] = useState(true);
 
-  useEffect(async () => {
-    await setTimeout(() => setload(false), 8000);
-  }, []);
   return (
     <>
       <>
@@ -26,11 +23,22 @@ const App = () => {
             <Route
               path="/"
               exact
-              render={() => <Home load={load} BDOME={BDOME} />}
+              render={() => (
+                <Home load={load} setload={setload} BDOME={BDOME} />
+              )}
             />
-            <Route path="/events" render={() => <Events load={load} />} />
-            <Route path="/resources" render={() => <Resources load={load} />} />
-            <Route path="/team" render={() => <Team load={load} />} />
+            <Route
+              path="/events"
+              render={() => <Events load={load} setload={setload} />}
+            />
+            <Route
+              path="/resources"
+              render={() => <Resources load={load} setload={setload} />}
+            />
+            <Route
+              path="/team"
+              render={() => <Team load={load} setload={setload} />}
+            />
           </Switch>
           {/* <Footer /> */}
         </Router>

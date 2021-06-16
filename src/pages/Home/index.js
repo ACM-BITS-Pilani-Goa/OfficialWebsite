@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Timeline from "../../components/Timeline/index";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
@@ -9,7 +9,10 @@ import AboutUs from "../../components/aboutUs/index";
 import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
 
-export default function Home({ load, BDOME }) {
+export default function Home({ load, BDOME, setload }) {
+  useEffect(async () => {
+    await setTimeout(() => setload(false), 8000);
+  }, []);
   let display;
   if (load) {
     display = "flex";
