@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ResourceWrapper from "./style";
 // import CollapsibleTable from "../../components/table/index";
 import ResourceCard from "../../components/ResourceCard";
@@ -8,8 +8,26 @@ import blog from "../../images/coming.jpeg";
 import form from "../../images/form.jpg";
 import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
+import ACMlogoHome from "../../images/ACM logo textRight.svg";
+import LoadWrapper from "./loadstyles";
 
-export default function Resource() {
+export default function Resource({ load, setload }) {
+  useEffect(async () => {
+    await setTimeout(() => setload(false), 8000);
+  }, []);
+  let display;
+  if (load) {
+    display = "flex";
+  } else {
+    display = "none";
+  }
+
+  let displayother;
+  if (load) {
+    displayother = "none";
+  } else {
+    displayother = " ";
+  }
   const resources = [
     {
       name: "GitHub",
@@ -54,19 +72,38 @@ export default function Resource() {
 
   return (
     <>
-    <Navbar />
-      <div>
-        <ResourceWrapper>
-          <div className="holding" style={{ marginTop: "8vw" }}>
-            <h1 className="heading">Resources</h1>
-            <br />
-            <br />
-            {resourceList}
+      <LoadWrapper>
+        <div className="loadBackground" style={{ display: display }}>
+          <img
+            src={ACMlogoHome}
+            className="bannerset"
+            width="50%"
+            style={{ justify: "center" }}
+          />
+          <div>
+            <div className="lds-facebook">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
-          {/*<CollapsibleTable />*/}
-        </ResourceWrapper>
+        </div>{" "}
+      </LoadWrapper>
+      <div style={{ display: displayother }}>
+        <Navbar />
+        <div>
+          <ResourceWrapper>
+            <div className="holding" style={{ marginTop: "8vw" }}>
+              <h1 className="heading">Resources</h1>
+              <br />
+              <br />
+              {resourceList}
+            </div>
+            {/*<CollapsibleTable />*/}
+          </ResourceWrapper>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

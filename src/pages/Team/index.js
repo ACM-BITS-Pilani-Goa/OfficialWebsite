@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MemberCard from "../../components/MemberCard";
 import jayant from "../../images/jayant.jpg";
 import aviral from "../../images/aviral.jpg";
@@ -15,8 +15,27 @@ import vaibhav from "../../images/vaibhav.jpg";
 import TeamWrapper from "./styles";
 import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
+import ACMlogoHome from "../../images/ACM logo textRight.svg";
+import LoadWrapper from "./loadstyles";
 
-const Team = () => {
+const Team = ({ load, setload }) => {
+  useEffect(async () => {
+    await setTimeout(() => setload(false), 8000);
+  }, []);
+  let display;
+  if (load) {
+    display = "flex";
+  } else {
+    display = "none";
+  }
+
+  let displayother;
+  if (load) {
+    displayother = "none";
+  } else {
+    displayother = " ";
+  }
+
   const members = [
     {
       name: "Jayant",
@@ -117,16 +136,35 @@ const Team = () => {
 
   return (
     <>
-    <Navbar />
-      <TeamWrapper>
-        <div className="holder" style={{ marginTop: "8vw" }}>
-          <h1 className="heading">Founding Team</h1>
-          <br />
-          <br />
-          {memberList}
-        </div>
-      </TeamWrapper>
-      <Footer />
+      <LoadWrapper>
+        <div className="loadBackground" style={{ display: display }}>
+          <img
+            src={ACMlogoHome}
+            className="bannerset"
+            width="50%"
+            style={{ justify: "center" }}
+          />
+          <div>
+            <div className="lds-facebook">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>{" "}
+      </LoadWrapper>
+      <div style={{ display: displayother }}>
+        <Navbar />
+        <TeamWrapper>
+          <div className="holder" style={{ marginTop: "8vw" }}>
+            <h1 className="heading">Founding Team</h1>
+            <br />
+            <br />
+            {memberList}
+          </div>
+        </TeamWrapper>
+        <Footer />
+      </div>
     </>
   );
 };
