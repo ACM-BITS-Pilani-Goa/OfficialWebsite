@@ -16,6 +16,7 @@ import TeamWrapper from "./styles";
 import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
+import LoadWrapper from "./loadstyles";
 
 const Team = ({ load }) => {
   const members = [
@@ -118,7 +119,7 @@ const Team = ({ load }) => {
 
   return (
     <>
-      <TeamWrapper>
+      <LoadWrapper>
         <div
           className="loadBackground"
           style={{ display: load ? "flex" : "none" }}
@@ -137,7 +138,7 @@ const Team = ({ load }) => {
             </div>
           </div>
         </div>{" "}
-      </TeamWrapper>
+      </LoadWrapper>
       <div style={{ display: load ? "none" : " " }}>
         <Navbar />
         <TeamWrapper>

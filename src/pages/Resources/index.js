@@ -9,6 +9,7 @@ import form from "../../images/form.jpg";
 import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
+import LoadWrapper from "./loadstyles";
 
 export default function Resource({ load }) {
   const resources = [
@@ -55,7 +56,7 @@ export default function Resource({ load }) {
 
   return (
     <>
-      <ResourceWrapper>
+      <LoadWrapper>
         <div
           className="loadBackground"
           style={{ display: load ? "flex" : "none" }}
@@ -74,7 +75,7 @@ export default function Resource({ load }) {
             </div>
           </div>
         </div>{" "}
-      </ResourceWrapper>
+      </LoadWrapper>
       <div style={{ display: load ? "none" : " " }}>
         <Navbar />
         <div>
