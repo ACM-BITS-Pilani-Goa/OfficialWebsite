@@ -11,20 +11,30 @@ import ACMlogoHome from "../../images/ACM logo textRight.svg";
 import AboutUsWrapper from "./style";
 
 export default function AboutUs({ load }) {
+  let display;
+  if (load) {
+    display = "flex";
+  } else {
+    display = "none";
+  }
+
+  let displayother;
+  if (load) {
+    displayother = "none";
+  } else {
+    displayother = " ";
+  }
   return (
     <>
       <AboutUsWrapper>
-        <div
-          className="loadBackground"
-          style={{ display: load ? "flex" : "none" }}
-        >
+        <div className="loadBackground" style={{ display: display }}>
           <img
             src={ACMlogoHome}
             className="bannerset"
             width="50%"
             style={{ justify: "center" }}
           />
-          <div className>
+          <div>
             <div className="lds-facebook">
               <div></div>
               <div></div>
@@ -33,7 +43,7 @@ export default function AboutUs({ load }) {
           </div>
         </div>{" "}
       </AboutUsWrapper>
-      <div style={{ display: load ? "none" : " " }}>
+      <div style={{ display: displayother }}>
         <Navbar />
         {/* <AboutUsWrapper>
         <div className="Bdome">

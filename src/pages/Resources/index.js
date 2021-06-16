@@ -12,6 +12,19 @@ import ACMlogoHome from "../../images/ACM logo textRight.svg";
 import LoadWrapper from "./loadstyles";
 
 export default function Resource({ load }) {
+  let display;
+  if (load) {
+    display = "flex";
+  } else {
+    display = "none";
+  }
+
+  let displayother;
+  if (load) {
+    displayother = "none";
+  } else {
+    displayother = " ";
+  }
   const resources = [
     {
       name: "GitHub",
@@ -57,17 +70,14 @@ export default function Resource({ load }) {
   return (
     <>
       <LoadWrapper>
-        <div
-          className="loadBackground"
-          style={{ display: load ? "flex" : "none" }}
-        >
+        <div className="loadBackground" style={{ display: display }}>
           <img
             src={ACMlogoHome}
             className="bannerset"
             width="50%"
             style={{ justify: "center" }}
           />
-          <div className>
+          <div>
             <div className="lds-facebook">
               <div></div>
               <div></div>
@@ -76,7 +86,7 @@ export default function Resource({ load }) {
           </div>
         </div>{" "}
       </LoadWrapper>
-      <div style={{ display: load ? "none" : " " }}>
+      <div style={{ display: displayother }}>
         <Navbar />
         <div>
           <ResourceWrapper>

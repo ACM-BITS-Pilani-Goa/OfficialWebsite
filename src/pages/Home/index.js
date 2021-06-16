@@ -10,6 +10,19 @@ import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
 
 export default function Home({ load, BDOME }) {
+  let display;
+  if (load) {
+    display = "flex";
+  } else {
+    display = "none";
+  }
+
+  let displayother;
+  if (load) {
+    displayother = "none";
+  } else {
+    displayother = " ";
+  }
   const BdomeWrap = styled.div`
     .Bdome {
       background: rgb(0, 0, 0);
@@ -41,17 +54,14 @@ export default function Home({ load, BDOME }) {
   return (
     <>
       <HomeWrapper>
-        <div
-          className="loadBackground"
-          style={{ display: load ? "flex" : "none" }}
-        >
+        <div className="loadBackground" style={{ display: display }}>
           <img
             src={ACMlogoHome}
             className="bannerset"
             width="50%"
             style={{ justify: "center" }}
           />
-          <div className>
+          <div>
             <div className="lds-facebook">
               <div></div>
               <div></div>
@@ -60,7 +70,7 @@ export default function Home({ load, BDOME }) {
           </div>
         </div>{" "}
       </HomeWrapper>
-      <div style={{ display: load ? "none" : " " }}>
+      <div style={{ display: displayother }}>
         <Navbar />
         <HomeWrapper>
           <BdomeWrap>
