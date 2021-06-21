@@ -28,7 +28,8 @@ export default function AboutUs() {
                 new and interesting things to learn everyday. We aim to serve as
                 a dynamic hub of activities for the students of BITS Goa, where
                 they meet, interact, learn from each other and nurture
-                themselves in the process. <br /><br />
+                themselves in the process. <br />
+                <br />
                 Our chapter will serve as node of activity for ACM members and
                 the computing community at large, offering seminars, lectures,
                 and the opportunity to meet peers and experts in many fields of

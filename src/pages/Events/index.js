@@ -162,7 +162,7 @@ export default function AboutUs({ load, setload }) {
             </div>
           </div>
         </EventsWrapperMain>
-        <Footer />
+        <Footer none="none" />
       </div>
     </>
   );

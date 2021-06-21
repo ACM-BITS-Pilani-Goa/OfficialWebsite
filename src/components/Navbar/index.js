@@ -20,7 +20,6 @@ const Navbar = () => {
 
   const handleScroll = () => {
     if (window.scrollY > 20 && window.innerWidth > 960) {
-      console.log(window.innerWidth);
       document.querySelector("nav").className = "navbar scroll";
     } else if (window.innerWidth > 960) {
       document.querySelector("nav").className = "navbar";

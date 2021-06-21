@@ -102,7 +102,7 @@ export default function Resource({ load, setload }) {
             {/*<CollapsibleTable />*/}
           </ResourceWrapper>
         </div>
-        <Footer />
+        <Footer none="none" />
       </div>
     </>
   );

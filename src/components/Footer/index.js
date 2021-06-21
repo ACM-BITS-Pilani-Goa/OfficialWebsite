@@ -2,7 +2,7 @@ import React from "react";
 import { FooterWrapper } from "./styles";
 import Grid from "@material-ui/core/Grid";
 
-const Footer = () => {
+const Footer = ({ none }) => {
   return (
     <FooterWrapper>
       <div className="head">
@@ -88,6 +88,24 @@ const Footer = () => {
                   </span>{" "}
                   {"     "}
                 </i>
+              </a>
+            </p>
+            <p
+              style={{ color: "white", display: `${none}` }}
+              className="fontR2"
+            >
+              <a
+                href="https://www.instagram.com/dev.sys/"
+                target="_blank"
+                style={{ color: "white", textDecoration: "none" }}
+                rel="noreferrer"
+              >
+                <span>
+                  BDOME in ball credits:
+                  <br />
+                  Devashish Gupta
+                </span>{" "}
+                {"     "}
               </a>
             </p>
           </div>

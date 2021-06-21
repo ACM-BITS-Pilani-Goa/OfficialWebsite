@@ -174,7 +174,7 @@ const Team = ({ load, setload }) => {
             {memberList}
           </div>
         </TeamWrapper>
-        <Footer />
+        <Footer none="none" />
       </div>
     </>
   );
