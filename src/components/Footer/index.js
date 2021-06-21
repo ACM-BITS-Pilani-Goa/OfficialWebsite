@@ -10,7 +10,11 @@ const Footer = () => {
           ACM BITS Pilani Goa Chapter
         </h2>
       </div>
-      <Grid container spacing={0} style={{ backgroundColor: "black" }}>
+      <Grid
+        container
+        spacing={0}
+        style={{ backgroundColor: "black", marginTop: "-5px" }}
+      >
         <Grid item xs={12} sm={6}>
           <div className="left-half">
             <p style={{ color: "white" }} className="fontL">
@@ -47,15 +51,15 @@ const Footer = () => {
             </p>
             <p className="fontL3">
               <a
-                href=""
+                href="https://www.instagram.com/acmbpgc/?hl=en"
                 style={{ textDecoration: "none", color: "white" }}
                 target="_blank"
                 rel="noreferrer"
               >
                 <i style={{ color: "white" }} className="fab fa-instagram">
-                  <span style={{ marginLeft: "10px" }}>
+                  <span style={{ marginLeft: "9px" }}>
                     {" "}
-                    admin@bitsg.acm.org
+                    BITS Goa ACM on Instagram
                   </span>
                 </i>
               </a>

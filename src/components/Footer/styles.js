@@ -52,6 +52,7 @@ export const FooterWrapper = styled.div`
   .fontL3 {
     display: flex;
     justify-content: center;
+    padding-left: 38px;
     margin-bottom: 36px;
   }
 `;
