@@ -10,7 +10,11 @@ const Footer = () => {
           ACM BITS Pilani Goa Chapter
         </h2>
       </div>
-      <Grid container spacing={0} style={{ backgroundColor: "black" }}>
+      <Grid
+        container
+        spacing={0}
+        style={{ backgroundColor: "black", marginTop: "-5px" }}
+      >
         <Grid item xs={12} sm={6}>
           <div className="left-half">
             <p style={{ color: "white" }} className="fontL">
@@ -31,9 +35,34 @@ const Footer = () => {
               </a>
             </p>
             <p className="fontL2">
-              <i style={{ color: "white" }} className="far fa-envelope">
-                <span style={{ marginLeft: "10px" }}>admin@bitsg.acm.org</span>
-              </i>
+              <a
+                href="mailto:admin@bitsg.acm.org"
+                style={{ textDecoration: "none", color: "white" }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i style={{ color: "white" }} className="far fa-envelope">
+                  <span style={{ marginLeft: "10px" }}>
+                    {" "}
+                    admin@bitsg.acm.org
+                  </span>
+                </i>
+              </a>
+            </p>
+            <p className="fontL3">
+              <a
+                href="https://www.instagram.com/acmbpgc/?hl=en"
+                style={{ textDecoration: "none", color: "white" }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i style={{ color: "white" }} className="fab fa-instagram">
+                  <span style={{ marginLeft: "9px" }}>
+                    {" "}
+                    BITS Goa ACM on Instagram
+                  </span>
+                </i>
+              </a>
             </p>
           </div>
         </Grid>
@@ -50,11 +79,14 @@ const Footer = () => {
                 href="https://www.google.com/maps/d/u/0/viewer?ie=UTF8&t=m&oe=UTF8&msa=0&mid=1hWnxlejcCPxEN84cH8goANCl0nM&ll=15.390011999999993%2C73.87745600000001&z=17"
               >
                 <i className="fas fa-map-marker-alt" aria-hidden="true">
-                  {"     "} BITS Pilani, K.K. Birla
-                  <br />
-                  Goa campus,
-                  <br />
-                  {"     "} Zuarinagar, Sancoale, Goa
+                  <span style={{ marginLeft: "10px" }}>
+                    BITS Pilani, K.K. Birla
+                    <br />
+                    Goa campus,
+                    <br />
+                    {"     "} Zuarinagar, Sancoale, Goa
+                  </span>{" "}
+                  {"     "}
                 </i>
               </a>
             </p>
