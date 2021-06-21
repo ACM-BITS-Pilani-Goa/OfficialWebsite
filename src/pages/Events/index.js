@@ -4,7 +4,7 @@ import config from "react-reveal/globals";
 import Footer from "../../components/Footer/index";
 config({ ssrFadeout: true });
 // import AboutUsWrapper from "./style";
-import ACMlogo from "../../images/ACM logo textRight.svg";
+import ACMlogo from "../../images/ACM text logo.svg";
 import EventsWrapperMain from "./stylenext";
 import Navbar from "../../components/Navbar";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
@@ -12,7 +12,7 @@ import AboutUsWrapper from "./style";
 
 export default function AboutUs({ load, setload }) {
   useEffect(async () => {
-    await setTimeout(() => setload(false), 8000);
+    await setTimeout(() => setload(false), 3000);
   }, []);
   let display;
   if (load) {
@@ -85,13 +85,12 @@ export default function AboutUs({ load, setload }) {
                     </div>
                     <div className="event-body">
                       <p>
-                        As of 16th June 2021, we have officially launched the
+                        As of 21st June 2021, we have officially launched the
                         ACM BITS Pilani Goa Student Chapter.
                         <br />
                         More than 2 months in setup and registration, we pledge
                         to actively work to create a hub of computer science
                         enthusiasts solely based on passion and interest.
-                        <br />
                         <br />
                         <br /> We plan out events and activities which will
                         bring students together with the industry professionals
@@ -102,18 +101,22 @@ export default function AboutUs({ load, setload }) {
                           href="https://github.com/ACM-BITS-Pilani-Goa"
                           target="blank"
                         >
-                          Github organisation
+                          GitHub organisation <br />
                         </a>{" "}
-                        that accumulates best tech-repositories available.
+                        Accumulation of best student related repositories
+                        available.
                         <br />
-                        <br /> Subscribe to ACM Tech-Newsletters{" "}
+                        <br /> Subscribe to ACM Tech-Newsletters to receive
+                        latest TechNews thrice a week directly in your inbox. By
+                        subscribing to our mailing list you'll also receive
+                        updates about ACM Call for Papers, Grants and
+                        Scholarships.{" "}
                         <a
                           href="https://docs.google.com/forms/d/e/1FAIpQLSdLmpVQfhBI3GI5xM9gIMqv-dNoH72zrQq5kMHBn4i11_TlsA/viewform"
                           target="blank"
                         >
-                          here
+                          Subscribe here.
                         </a>
-                        .
                         <br />
                         <br />{" "}
                         <a
@@ -121,8 +124,9 @@ export default function AboutUs({ load, setload }) {
                           target="blank"
                         >
                           Wiki
+                          <br />
                         </a>{" "}
-                        as one-stop portal to get all your queries answered
+                        A one-stop portal to get all your queries answered
                         without having to put up messages on a plethora of
                         groups.
                       </p>

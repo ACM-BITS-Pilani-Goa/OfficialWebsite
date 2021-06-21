@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
 import MemberCardWrapper from "./styles";
 
 const MemberCard = ({
@@ -29,13 +29,26 @@ const MemberCard = ({
       <div className="socialIconContainer">
         <div className="socialIconWrapper">
           <div className="icon">
+            <a href="http://sougata-sen.com/" target="_blank" rel="noreferrer">
+              {(() => {
+                switch (name) {
+                  case "Sougata Sen":
+                    return <FaGlobe color="#0e7cc1" />;
+                }
+              })()}
+            </a>
             <a
               aria-label="LinkedIn"
               href={link_linkedin}
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin />
+              {(() => {
+                switch (name == "Sougata Sen") {
+                  case false:
+                    return <FaLinkedin color="#0e7cc1" />;
+                }
+              })()}
             </a>
           </div>
           <div className="icon">
@@ -45,7 +58,12 @@ const MemberCard = ({
               target="_blank"
               rel="noreferrer"
             >
-              <FaGithub color="#000" />
+              {(() => {
+                switch (name == "Sougata Sen") {
+                  case false:
+                    return <FaGithub color="#000" />;
+                }
+              })()}
             </a>
           </div>
         </div>

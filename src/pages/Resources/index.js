@@ -13,7 +13,7 @@ import LoadWrapper from "./loadstyles";
 
 export default function Resource({ load, setload }) {
   useEffect(async () => {
-    await setTimeout(() => setload(false), 8000);
+    await setTimeout(() => setload(false), 3000);
   }, []);
   let display;
   if (load) {
@@ -39,7 +39,7 @@ export default function Resource({ load, setload }) {
     {
       name: "BITS Wiki",
       desc: "All the information related to BITS Goa accumulated in one place.",
-      link: "https://wiki.bitsg.hosting.acm.org/wiki/index.php/Main_Page",
+      link: "https://wiki.bitsg.hosting.acm.org/index.php/Main_Page",
       img: `${wiki}`,
       icon: "FaGlobe",
     },

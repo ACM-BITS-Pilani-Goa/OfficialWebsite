@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import img1 from "./img/img1.jpeg";
 
 const AboutUsWrapper = styled.div`
   .animate:hover {
@@ -61,12 +60,11 @@ const AboutUsWrapper = styled.div`
   .Bdome {
     background: rgb(0, 0, 0);
     background: radial-gradient(
-        circle,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url(${img1});
+      circle,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
     opacity: 1;
     height: 100vh;
     background-attachment: fixed;
