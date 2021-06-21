@@ -23,13 +23,16 @@ export default function AboutUs() {
                 Chapter <br /> BITS Pilani, K. K. Birla Goa campus.
               </p>
               <br />
-              <p>
+              <p className="main-text">
                 The world of computing is vast and fast paced where you can find
                 new and interesting things to learn everyday. We aim to serve as
                 a dynamic hub of activities for the students of BITS Goa, where
                 they meet, interact, learn from each other and nurture
-                themselves in the process. Staying up-to-date and learning
-                multiple skills is the best way to stay in this competition.
+                themselves in the process. <br /><br />
+                Our chapter will serve as node of activity for ACM members and
+                the computing community at large, offering seminars, lectures,
+                and the opportunity to meet peers and experts in many fields of
+                interest.
               </p>
             </div>
           </Zoom>

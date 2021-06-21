@@ -39,6 +39,7 @@ const Timeline = () => {
                 href="http://wiki.bitsg.hosting.acm.org/"
                 rel="noreferrer"
               >
+                <br />
                 Check it out!
               </a>
             </p>
@@ -61,6 +62,7 @@ const Timeline = () => {
                 href="https://github.com/ACM-BITS-Pilani-Goa"
                 rel="noreferrer"
               >
+                <br />
                 Check it out!
               </a>
             </p>

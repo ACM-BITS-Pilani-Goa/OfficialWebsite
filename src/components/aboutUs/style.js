@@ -92,6 +92,7 @@ const AboutUsWrapper = styled.div`
   .main-text {
     display: flex;
     justify-content: center;
+    width: 80vw;
   }
 
   @media screen and (max-width: 768px) {

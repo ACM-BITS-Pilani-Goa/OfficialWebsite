@@ -84,6 +84,11 @@ export default function Home({ load, BDOME, setload }) {
                 width="50%"
                 style={{ justify: "center" }}
               />
+              <span className="credit">
+                <a href="https://www.instagram.com/dev.sys/">
+                  Picture  Credits:  Devashish  Gupta
+                </a>
+              </span>
             </div>
           </BdomeWrap>
           <AboutUs />
