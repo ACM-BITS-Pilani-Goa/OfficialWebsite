@@ -48,11 +48,11 @@ export default function Home({ load, BDOME, setload }) {
       display: flex;
     }
 
-    /*@media (max-width: 390px) {
+    @media (max-width: 390px) {
       .Bdome {
         background-attachment: scroll;
       }
-    }*/
+    }
   `;
   return (
     <>

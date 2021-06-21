@@ -100,14 +100,14 @@ const AboutUsWrapper = styled.div`
     }
   }
 
-  /*@media (max-width: 390px) {
+  @media (max-width: 390px) {
     .pimg1,
     .pimg2,
     .pimg3 {
       background-attachment: scroll;
       // display: none;
     }
-  }*/
+  }
 `;
 
 export default AboutUsWrapper;
