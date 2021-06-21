@@ -11,7 +11,7 @@ import Navbar from "../../components/Navbar";
 
 export default function Home({ load, BDOME, setload }) {
   useEffect(async () => {
-    await setTimeout(() => setload(false), 8000);
+    await setTimeout(() => setload(false), 3000);
   }, []);
   let display;
   if (load) {
@@ -31,9 +31,9 @@ export default function Home({ load, BDOME, setload }) {
       background: rgb(0, 0, 0);
       background: radial-gradient(
           circle,
-          rgba(0, 0, 0, 0.7),
           rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.5)
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.2)
         ),
         url("${BDOME}");
       opacity: 1;

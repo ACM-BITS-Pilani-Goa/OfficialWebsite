@@ -13,7 +13,7 @@ const Timeline = () => {
         <VerticalTimelineElement
           contentStyle={{ background: "rgb(33, 150, 243)" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="16/06/2021"
+          date="21/06/2021"
           iconStyle={{ background: "rgb(33, 150, 243)" }}
         >
           <div className="event-content">
@@ -33,7 +33,13 @@ const Timeline = () => {
               We launched a Wiki to act as one-stop portal to get all your
               queries answered without having to put up messages on a plethora
               of groups. The wiki has topics for major FAQs.
-              <a href="/resources">Check it out!</a>
+              <a
+                target="_blank"
+                href="http://wiki.bitsg.hosting.acm.org/"
+                rel="noreferrer"
+              >
+                Check it out!
+              </a>
             </p>
           </div>
         </VerticalTimelineElement>
@@ -46,8 +52,15 @@ const Timeline = () => {
           <div className="event-content">
             <h3>GitHub Organisation Launched</h3>
             <p>
-              We launched a GitHub organisation to accumulate best repositories
-              available. <a href="/resources">Check it out!</a>
+              We launched a GitHub organisation to accumulate best Students
+              related open source repositories available, in one place.{" "}
+              <a
+                target="_blank"
+                href="https://github.com/ACM-BITS-Pilani-Goa"
+                rel="noreferrer"
+              >
+                Check it out!
+              </a>
             </p>
           </div>
         </VerticalTimelineElement>

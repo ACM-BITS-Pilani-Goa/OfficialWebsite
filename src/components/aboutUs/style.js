@@ -105,6 +105,7 @@ const AboutUsWrapper = styled.div`
     .pimg2,
     .pimg3 {
       background-attachment: scroll;
+      // display: none;
     }
   }*/
 `;
