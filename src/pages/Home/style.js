@@ -5,6 +5,17 @@ const HomeWrapper = styled.div`
     position: absolute;
     align-self: center;
   }
+  .credit {
+    position: absolute;
+    align-self: flex-end;
+    color: #0e7cc1;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .credit > a{
+    text-decoration: none;
+    color: whitesmoke;
+  }
   /*.Bdome {
     background: rgb(0, 0, 0);
     background: radial-gradient(
