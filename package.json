@@ -1,5 +1,6 @@
 {
   "name": "officialwebsite",
+  "homepage": "https://bitsg.acm.org/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
