@@ -36,18 +36,24 @@ export const FooterWrapper = styled.div`
   .fontR1 {
     display: flex;
     justify-content: center;
+    margin-bottom: 18px;
+  }
+  .fontR2 {
+    display: flex;
+    justify-content: center;
     margin-bottom: 33px;
+    margin-left: -25px;
   }
   .fontL1 {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding-left: 28px;
   }
   .fontL2 {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .fontL3 {
     display: flex;

@@ -12,7 +12,7 @@ const HomeWrapper = styled.div`
     font-size: 15px;
     font-weight: 700;
   }
-  .credit > a{
+  .credit > a {
     text-decoration: none;
     color: whitesmoke;
   }
