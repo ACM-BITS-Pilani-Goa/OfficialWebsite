@@ -108,7 +108,7 @@ export default function AboutUs({ load, setload }) {
                         <br />
                         <br /> Subscribe to ACM Tech-Newsletters to receive
                         latest TechNews thrice a week directly in your inbox. By
-                        subscribing to our mailing list you'll also receive
+                        subscribing to our mailing list you{"'"}ll also receive
                         updates about ACM Call for Papers, Grants and
                         Scholarships.{" "}
                         <a
