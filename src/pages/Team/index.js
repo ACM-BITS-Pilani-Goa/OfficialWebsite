@@ -12,6 +12,7 @@ import arnav from "../../images/arnav.jpeg";
 import mehul from "../../images/mehul.jpeg";
 import kanishq from "../../images/kanishq.jpg";
 import vaibhav from "../../images/vaibhav.jpeg";
+import sir from "../../images/sougatasir.jpg";
 import TeamWrapper from "./styles";
 import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
@@ -157,6 +158,16 @@ const Team = ({ load, setload }) => {
         <Navbar />
         <TeamWrapper>
           <div className="holder" style={{ marginTop: "8vw" }}>
+            <h1 className="heading">Faculty Advisor</h1>
+            <br />
+            <br />
+            <MemberCard
+              name="Sougata Sen"
+              title="Assistant Professor, CSIS, BITS Goa"
+              // link_linkedin={member.linkedin}
+              // link_github={member.github}
+              img={sir}
+            />
             <h1 className="heading">Founding Team</h1>
             <br />
             <br />

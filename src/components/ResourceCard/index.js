@@ -36,9 +36,6 @@ const ResourceCard = ({
             ) : (
               <i className="fab fa-wpforms" />
             )}
-            {
-              // }<i class="fab fa-wpforms"></i>
-            }
           </a>
         </div>
       </div>
