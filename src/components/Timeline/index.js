@@ -33,6 +33,7 @@ const Timeline = () => {
               We launched a Wiki to act as one-stop portal to get all your
               queries answered without having to put up messages on a plethora
               of groups. The wiki has topics for major FAQs.
+              <br></br>
               <a
                 target="_blank"
                 href="http://wiki.bitsg.hosting.acm.org/"
@@ -54,6 +55,7 @@ const Timeline = () => {
             <p>
               We launched a GitHub organisation to accumulate best Students
               related open source repositories available, in one place.{" "}
+              <br></br>
               <a
                 target="_blank"
                 href="https://github.com/ACM-BITS-Pilani-Goa"

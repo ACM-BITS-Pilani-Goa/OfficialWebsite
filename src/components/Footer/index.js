@@ -31,9 +31,34 @@ const Footer = () => {
               </a>
             </p>
             <p className="fontL2">
-              <i style={{ color: "white" }} className="far fa-envelope">
-                <span style={{ marginLeft: "10px" }}>admin@bitsg.acm.org</span>
-              </i>
+              <a
+                href="mailto:admin@bitsg.acm.org"
+                style={{ textDecoration: "none", color: "white" }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i style={{ color: "white" }} className="far fa-envelope">
+                  <span style={{ marginLeft: "10px" }}>
+                    {" "}
+                    admin@bitsg.acm.org
+                  </span>
+                </i>
+              </a>
+            </p>
+            <p className="fontL3">
+              <a
+                href=""
+                style={{ textDecoration: "none", color: "white" }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i style={{ color: "white" }} className="fab fa-instagram">
+                  <span style={{ marginLeft: "10px" }}>
+                    {" "}
+                    admin@bitsg.acm.org
+                  </span>
+                </i>
+              </a>
             </p>
           </div>
         </Grid>
@@ -50,11 +75,14 @@ const Footer = () => {
                 href="https://www.google.com/maps/d/u/0/viewer?ie=UTF8&t=m&oe=UTF8&msa=0&mid=1hWnxlejcCPxEN84cH8goANCl0nM&ll=15.390011999999993%2C73.87745600000001&z=17"
               >
                 <i className="fas fa-map-marker-alt" aria-hidden="true">
-                  {"     "} BITS Pilani, K.K. Birla
-                  <br />
-                  Goa campus,
-                  <br />
-                  {"     "} Zuarinagar, Sancoale, Goa
+                  <span style={{ marginLeft: "10px" }}>
+                    BITS Pilani, K.K. Birla
+                    <br />
+                    Goa campus,
+                    <br />
+                    {"     "} Zuarinagar, Sancoale, Goa
+                  </span>{" "}
+                  {"     "}
                 </i>
               </a>
             </p>
