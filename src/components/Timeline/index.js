@@ -13,7 +13,7 @@ const Timeline = () => {
         <VerticalTimelineElement
           contentStyle={{ background: "rgb(33, 150, 243)" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="21/06/2021"
+          date="22/06/2021"
           iconStyle={{ background: "rgb(33, 150, 243)" }}
         >
           <div className="event-content">
