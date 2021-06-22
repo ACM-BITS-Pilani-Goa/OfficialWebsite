@@ -2,7 +2,7 @@
 <img width="500" src="https://github.com/ACM-BITS-Pilani-Goa/OfficialWebsite/blob/main/src/images/ACM%20logo%20textRight.svg">
 </p>
 
-<h1 align="center"> ACM BITS Pilami Goa Official Website </h1>
+<h1 align="center"> ACM BITS Pilani Goa Official Website </h1>
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
