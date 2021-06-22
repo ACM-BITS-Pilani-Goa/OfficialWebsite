@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+<p align="center">
+<img width="500" src="https://github.com/ACM-BITS-Pilani-Goa/OfficialWebsite/blob/main/src/images/ACM%20logo%20textRight.svg">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center"> ACM BITS Pilami Goa Official Website </h1>
 
-## Available Scripts
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-In the project directory, you can run:
+## About
+ACM BITS-Pilani, Goa Student chapter will serve as a hub of activity for ACM members and the computing community at large. We plan to provide seminars, lectures, learning forums, and networking opportunities with peers and experts across the computing spectrum.
 
-### `yarn start`
+Production build of this project is deployed at [ACM Bits Goa](https://bitsg.acm.org/).
+<br />
+Developement build of this project is deployed at [ACM Bits Goa Development](https://acmbitsgoa.netlify.app/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
+- [Quick Start :boom:](#quick-start)
+- [Installation 🐣](#installation)
+- [Starting the app](#starting-the-app)
+- [Contribution Guidelines ✒](#contribution-guidelines)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Quick Start
+This is the offical website for the ACM BITS Pilani Goa Chapter.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `yarn build`
+Follow these steps to install this project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+# clone the repo
+$ git clone https://github.com/ACM-BITS-Pilani-Goa/OfficialWebsite.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# go into app's directory:
+$ cd officialwebsite
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# install dependencies
+$ npm install
+```
 
-### `yarn eject`
+## Starting the app
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Follow these steps to run the app on your local machine:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+# go into app's directory:
+$ cd officialwebsite
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# in a terminal, start the react app
+$ npm run start
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
 
-## Learn More
+## Contribution Guidelines
+1. **Fork** the repo on GitHub.
+2. **Clone** the project to your own machine.
+3. **Commit** changes to your own branch.
+4. **Push** your work back up to your fork.
+5. **Submit** a pull request.
+(Make sure you *merge* before you make a pull request!)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Pull Request Guidelines
+1. The subject should be a short one line summary of the change you've made.
+2. The extended description should include a deatiled description of the changes you've made and also a list of all the files you've made changes in.
+3. One pull request should cater to only one change. *A change may include multiple file changes that are essential to solving the issue/change.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Social Media
 
-### Code Splitting
+Instagram: <https://www.instagram.com/acmbpgc/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Linkedin: <https://www.linkedin.com/company/acm-bits-pilani-goa-chapter>
