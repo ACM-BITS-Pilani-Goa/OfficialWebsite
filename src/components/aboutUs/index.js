@@ -18,12 +18,12 @@ export default function AboutUs() {
           </Zoom>
           <Zoom bottom>
             <div>
-              <p className="main-text">
+              <p>
                 We are the Association for Computing Machinery (ACM), Student
                 Chapter <br /> BITS Pilani, K. K. Birla Goa campus.
               </p>
               <br />
-              <p className="main-text">
+              <p>
                 The world of computing is vast and fast paced where you can find
                 new and interesting things to learn everyday. We aim to serve as
                 a dynamic hub of activities for the students of BITS Goa, where
