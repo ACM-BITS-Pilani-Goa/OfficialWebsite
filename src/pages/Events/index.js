@@ -85,7 +85,7 @@ export default function AboutUs({ load, setload }) {
                       <span> Foundations Laid </span>
                     </div>
                     <div className="event-body">
-                      <p>
+                      <p style={{ textAlign: "justify" }}>
                         As of 22nd June 2021, we have officially launched the
                         ACM BITS Pilani Goa Student Chapter.
                         <br />
@@ -146,8 +146,9 @@ export default function AboutUs({ load, setload }) {
                       <span> Getting Started With Series </span>
                     </div>
                     <div className="event-body">
-                      <p>
+                      <p style={{ textAlign: "justify" }}>
                         <b>Explore. Explore. Explore!</b>
+                        <br />
                         <br></br>
                         You must{"'"}ve heard this word year-round from your
                         seniors. But how exactly do you start exploring a field?
