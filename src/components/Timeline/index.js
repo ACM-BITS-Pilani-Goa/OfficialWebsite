@@ -75,7 +75,7 @@ const Timeline = () => {
           iconStyle={{ background: "rgb(33, 150, 243)" }}
         >
           <div className="event-content">
-            <h3>Getiing Started With Series</h3>
+            <h3>Getting Started With Series</h3>
             <p>
               It is a 5 day series of technological talks where seniors from our
               college would share their experiences and challenges they faced as
