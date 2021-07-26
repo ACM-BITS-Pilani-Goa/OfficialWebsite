@@ -68,6 +68,29 @@ const Timeline = () => {
             </p>
           </div>
         </VerticalTimelineElement>
+        <VerticalTimelineElement
+          contentStyle={{ background: "rgb(33, 150, 243)" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          date=""
+          iconStyle={{ background: "rgb(33, 150, 243)" }}
+        >
+          <div className="event-content">
+            <h3>Getiing Started With Series</h3>
+            <p>
+              It is a 5 day series of technological talks where seniors from our
+              college would share their experiences and challenges they faced as
+              a beginner in a field and how to overcome them. <br></br>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/p/CRyB_ZpBQcg/"
+                rel="noreferrer"
+              >
+                <br />
+                Check it out!
+              </a>
+            </p>
+          </div>
+        </VerticalTimelineElement>
         {/* <VerticalTimelineElement
           date="date here"
           iconStyle={{ background: "rgb(33, 150, 243)" }}

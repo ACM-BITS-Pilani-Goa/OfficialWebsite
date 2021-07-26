@@ -9,6 +9,7 @@ import EventsWrapperMain from "./stylenext";
 import Navbar from "../../components/Navbar";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
 import AboutUsWrapper from "./style";
+import GettingStartedWith from "../../images/getStart.jpeg";
 
 export default function AboutUs({ load, setload }) {
   useEffect(async () => {
@@ -84,7 +85,7 @@ export default function AboutUs({ load, setload }) {
                       <span> Foundations Laid </span>
                     </div>
                     <div className="event-body">
-                      <p>
+                      <p style={{ textAlign: "justify" }}>
                         As of 22nd June 2021, we have officially launched the
                         ACM BITS Pilani Goa Student Chapter.
                         <br />
@@ -131,6 +132,56 @@ export default function AboutUs({ load, setload }) {
                         groups.
                       </p>
                       <img className="event-image" src={`${ACMlogo}`} />
+                    </div>
+                  </div>
+                </Zoom>
+                <hr />
+                <Zoom>
+                  <div
+                    className="event-container container odd-event"
+                    style={{ paddingBottom: "20px" }}
+                  >
+                    <div className="event-title">
+                      {" "}
+                      <span> Getting Started With Series </span>
+                    </div>
+                    <div className="event-body">
+                      <p style={{ textAlign: "justify" }}>
+                        <b>Explore. Explore. Explore!</b>
+                        <br />
+                        <br></br>
+                        You must{"'"}ve heard this word year-round from your
+                        seniors. But how exactly do you start exploring a field?
+                        Receiving good guidance and mentorship is really crucial
+                        and effective to excel in a technological field swiftly.
+                        ACM BITS Goa is glad to help you with that with our
+                        first event - {"'"}
+                        Getting started with{"'"} series.
+                        <br />
+                        It is a 5 day series of technological talks where
+                        seniors from our college would share their experiences
+                        and challenges they faced as a beginner in a field and
+                        how to overcome them. They will talk about a brief
+                        overview of the field, the current technologies and
+                        scope, upcoming technologies and future markets, and
+                        pursuing the field as a career.
+                        <br />
+                        <br /> There will be a live QnA session at the end of
+                        each talk, so you{"'"}re free to ask any queries about
+                        the tech field or the topic you{"'"}re iffy about!
+                        <br />
+                        The event will be streamed live on{" "}
+                        <a
+                          href="https://www.youtube.com/channel/UC59ImqI7UeT8k4oKjfvfybA"
+                          target="blank"
+                        >
+                          our Youtube Channel <br />
+                        </a>{" "}
+                      </p>
+                      <img
+                        className="event-image"
+                        src={`${GettingStartedWith}`}
+                      />
                     </div>
                   </div>
                 </Zoom>
