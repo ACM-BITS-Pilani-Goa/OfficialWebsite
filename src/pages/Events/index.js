@@ -169,8 +169,7 @@ export default function AboutUs({ load, setload }) {
                         each talk, so you{"'"}re free to ask any queries about
                         the tech field or the topic you{"'"}re iffy about!
                         <br />
-                        The event will be streamed live on
-                        <br />{" "}
+                        The event will be streamed live on{" "}
                         <a
                           href="https://www.youtube.com/channel/UC59ImqI7UeT8k4oKjfvfybA"
                           target="blank"
