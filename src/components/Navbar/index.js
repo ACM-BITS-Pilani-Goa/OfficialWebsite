@@ -37,7 +37,11 @@ const Navbar = () => {
     <NavWrapper>
       <nav className={click ? "navbar1" : "navbar"}>
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <img src={ACMnav} className="acm-logo" style={{ width: "50%" }} />
+          <img
+            src={ACMnav}
+            className="acm-logo"
+            style={{ width: "50%", height: "125px" }}
+          />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
