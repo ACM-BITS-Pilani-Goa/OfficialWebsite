@@ -93,6 +93,15 @@ const Navbar = () => {
               Team
             </Link>
           </li>
+          <li className="nav-item">
+            <Link
+              to="/"
+              className={ "nav-links-active newsletter" }
+              onClick={closeMobileMenu}
+            >
+              <i class="far fa-envelope"></i> Subscribe to our newsletter
+            </Link>
+          </li>
         </ul>
       </nav>
     </NavWrapper>
