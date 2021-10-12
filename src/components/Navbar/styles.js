@@ -4,8 +4,8 @@ const NavWrapper = styled.div`
   position: relative;
   z-index: 99;
   .navbar {
-    background: rgb(0, 0, 0, 0);
-    height: 80px;
+    background: #ffffff;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,29 +24,13 @@ const NavWrapper = styled.div`
     width: 100%;
   }
   .scroll {
-    background-color: rgb(0, 0, 0);
-    background-image: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(9, 9, 121, 1) 61%,
-      rgba(33, 194, 236, 1) 100%
-    );
-    box-shadow: 0 7px 30px -15px #1a2638;
+    background-color: rgb(255, 255, 255);
   }
-
   .navbar-logo {
-    color: #000;
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 200px;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
   }
-  .acm-logo {
-    -webkit-animation: rotateOnY 5s infinite linear;
-    animation: rotateOnY 5s infinite linear;
-  }
-
   .fa-firstdraft {
     margin-left: 0.5rem;
     font-size: 1.6rem;
@@ -58,12 +42,13 @@ const NavWrapper = styled.div`
     list-style: none;
     text-align: center;
     width: 85vw;
-    justify-content: end;
+    justify-content: center;
     margin-right: 2rem;
   }
   .nav-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 80px;
     position: relative;
   }
@@ -82,31 +67,23 @@ const NavWrapper = styled.div`
     height: 80px;
     position: relative;
   }
-  .active::after {
-    content: "";
-    height: 3px;
-    width: 100%;
-    background: #ff0000;
-    position: absolute;
-    top: 60px;
-    transition: 0.5s;
-  }
-  .nav-item:hover::after {
-    width: 100%;
-  }
   .nav-links {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 0.5rem 1rem;
   }
   .nav-links-active {
-    color: red;
+    color: white;
+    background: black;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    border-radius: 5px;
   }
-
+  .newsletter {
+    margin-left: 50px;
+  }
   .fa-bars {
-    color: #fff;
+    color: #000000;
   }
   .nav-links-mobile {
     display: none;
@@ -116,7 +93,7 @@ const NavWrapper = styled.div`
   }
   @media screen and (max-width: 960px) {
     .navbar1 {
-      background: #242222;
+      background: #1b94bf;
     }
     .NavbarItems {
       position: relative;
@@ -136,7 +113,7 @@ const NavWrapper = styled.div`
       transition: all 0.4s ease;
     }
     .nav-menu.active {
-      background: #242222;
+      background: #bce6f5;
       left: 0;
       opacity: 1;
       transition: all 0.4s ease;
