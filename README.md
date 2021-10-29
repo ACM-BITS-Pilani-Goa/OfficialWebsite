@@ -56,13 +56,17 @@ $ npm run start
 2. **Clone** the project to your own machine.
 3. **Commit** changes to your own branch.
 4. **Push** your work back up to your fork.
-5. **Submit** a pull request.
-(Make sure you *merge* before you make a pull request!)
+5. **Submit** a pull request. (Make sure you *merge* before you make a pull request!)
+6. If you're a Hacktoberfest participant, make sure you have registered on the Hacktoberfest platform.
+7. Feel free to create new issues to address problems on the website. However, spam issues will be taken down.
+8. In case of doubt, just ask!
 
 ### Pull Request Guidelines
 1. The subject should be a short one line summary of the change you've made.
 2. The extended description should include a deatiled description of the changes you've made and also a list of all the files you've made changes in.
 3. One pull request should cater to only one change. *A change may include multiple file changes that are essential to solving the issue/change.
+4. Do not unecessarily spam, your PR won't be accepted.
+5. Merged PRs will be reflected on the [Development build](https://acmbitsgoa.netlify.app/).
 
 ### Social Media
 
