@@ -4,8 +4,9 @@ import ResourceWrapper from "./style";
 import ResourceCard from "../../components/ResourceCard";
 import githubpic from "../../images/github.jpg";
 import wiki from "../../images/wiki.jpg";
-import blog from "../../images/coming.jpeg";
 import form from "../../images/form.jpg";
+import youtube from "../../images/youtube.jpg";
+import medium from "../../images/medium.png";
 import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
@@ -44,10 +45,17 @@ export default function Resource({ load, setload }) {
       icon: "FaGlobe",
     },
     {
-      name: "Blog",
-      desc: "Coming soon",
-      link: "#",
-      img: `${blog}`,
+      name: "Youtube",
+      desc: "Check out our exclusive talks and events on YouTube.",
+      link: "https://www.youtube.com/channel/UC59ImqI7UeT8k4oKjfvfybA",
+      img: `${youtube}`,
+      icon: "FaGlobe",
+    },
+    {
+      name: "Medium",
+      desc: "Check out our exclusive blogs on Medium.",
+      link: "https://medium.com/@acmbpgc",
+      img: `${medium}`,
       icon: "FaGlobe",
     },
     {
