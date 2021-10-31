@@ -4,6 +4,7 @@ import ResourceWrapper from "./style";
 import ResourceCard from "../../components/ResourceCard";
 import githubpic from "../../images/github.jpg";
 import wiki from "../../images/wiki.jpg";
+import WIP from "../../images/coming.jpeg";
 import form from "../../images/form.jpg";
 import youtube from "../../images/youtube.jpg";
 import medium from "../../images/medium.png";
@@ -31,6 +32,7 @@ export default function Resource({ load, setload }) {
   }
   const resources = [
     {
+      isDone: true,
       name: "GitHub",
       desc: "Forks of best open source resources maintained actively in one place.",
       link: "https://github.com/ACM-BITS-Pilani-Goa",
@@ -38,6 +40,7 @@ export default function Resource({ load, setload }) {
       icon: "FaGithub",
     },
     {
+      isDone: true,
       name: "BITS Wiki",
       desc: "All the information related to BITS Goa accumulated in one place.",
       link: "https://wiki.bitsg.hosting.acm.org/index.php/Main_Page",
@@ -45,20 +48,23 @@ export default function Resource({ load, setload }) {
       icon: "FaGlobe",
     },
     {
+      isDone: true,
       name: "Youtube",
       desc: "Check out our exclusive talks and events on YouTube.",
       link: "https://www.youtube.com/channel/UC59ImqI7UeT8k4oKjfvfybA",
       img: `${youtube}`,
-      icon: "FaGlobe",
+      icon: "FaYoutube",
     },
     {
+      isDone: true,
       name: "Medium",
       desc: "Check out our exclusive blogs on Medium.",
       link: "https://medium.com/@acmbpgc",
       img: `${medium}`,
-      icon: "FaGlobe",
+      icon: "FaBloggerB",
     },
     {
+      isDone: true,
       name: "Form",
       desc: "Subscription form to join ACM Technews mailing lists.",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSdLmpVQfhBI3GI5xM9gIMqv-dNoH72zrQq5kMHBn4i11_TlsA/viewform?usp=sf_link",
@@ -71,9 +77,9 @@ export default function Resource({ load, setload }) {
     <ResourceCard
       key={index}
       name={resource.name}
-      desc={resource.desc}
+      desc={!resource.isDone ? "Coming Soon" : resource.desc}
       link={resource.link}
-      img={resource.img}
+      img={!resource.isDone ? `${WIP}` : resource.img}
       icon={resource.icon}
     />
   ));
