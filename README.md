@@ -73,3 +73,7 @@ $ npm run start
 Instagram: <https://www.instagram.com/acmbpgc/>
 
 Linkedin: <https://www.linkedin.com/company/acm-bits-pilani-goa-chapter>
+
+Youtube: <https://www.youtube.com/channel/UC59ImqI7UeT8k4oKjfvfybA>
+
+Medium blog: <https://medium.com/@acmbpgc>
