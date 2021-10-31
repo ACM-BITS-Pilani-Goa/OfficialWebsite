@@ -13,12 +13,35 @@ const Timeline = () => {
         <VerticalTimelineElement
           contentStyle={{ background: "rgb(33, 150, 243)" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="22/06/2021"
+          date="Oct 2021"
           iconStyle={{ background: "rgb(33, 150, 243)" }}
         >
           <div className="event-content">
-            <h3>Chapter Launch</h3>
-            <p>ACM BITS Pilani Goa Chapter Started</p>
+            <h3>Hacktoberfest 2021</h3>
+            <p>Opened ACM BITS Goa Website for Hacktoberfest 2021</p>
+          </div>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          contentStyle={{ background: "rgb(33, 150, 243)" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          date=""
+          iconStyle={{ background: "rgb(33, 150, 243)" }}
+        >
+          <div className="event-content">
+            <h3>Getting Started With Series</h3>
+            <p>
+              It is a 5 day series of technological talks where seniors from our
+              college would share their experiences and challenges they faced as
+              a beginner in a field and how to overcome them. <br></br>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/p/CRyB_ZpBQcg/"
+                rel="noreferrer"
+              >
+                <br />
+                Check it out!
+              </a>
+            </p>
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -71,24 +94,12 @@ const Timeline = () => {
         <VerticalTimelineElement
           contentStyle={{ background: "rgb(33, 150, 243)" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date=""
+          date="22/06/2021"
           iconStyle={{ background: "rgb(33, 150, 243)" }}
         >
           <div className="event-content">
-            <h3>Getting Started With Series</h3>
-            <p>
-              It is a 5 day series of technological talks where seniors from our
-              college would share their experiences and challenges they faced as
-              a beginner in a field and how to overcome them. <br></br>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/p/CRyB_ZpBQcg/"
-                rel="noreferrer"
-              >
-                <br />
-                Check it out!
-              </a>
-            </p>
+            <h3>Chapter Launch</h3>
+            <p>ACM BITS Pilani Goa Chapter Started</p>
           </div>
         </VerticalTimelineElement>
         {/* <VerticalTimelineElement
