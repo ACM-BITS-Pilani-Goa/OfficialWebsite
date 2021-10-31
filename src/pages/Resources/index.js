@@ -4,12 +4,13 @@ import ResourceWrapper from "./style";
 import ResourceCard from "../../components/ResourceCard";
 import githubpic from "../../images/github.jpg";
 import wiki from "../../images/wiki.jpg";
-import blog from "../../images/coming.jpeg";
+import WIP from "../../images/coming.jpeg";
 import form from "../../images/form.jpg";
 import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
 import LoadWrapper from "./loadstyles";
+import Medium from "../../images/Medium.jpeg";
 
 export default function Resource({ load, setload }) {
   useEffect(async () => {
@@ -30,6 +31,7 @@ export default function Resource({ load, setload }) {
   }
   const resources = [
     {
+      isDone: true,
       name: "GitHub",
       desc: "Forks of best open source resources maintained actively in one place.",
       link: "https://github.com/ACM-BITS-Pilani-Goa",
@@ -37,6 +39,7 @@ export default function Resource({ load, setload }) {
       icon: "FaGithub",
     },
     {
+      isDone: true,
       name: "BITS Wiki",
       desc: "All the information related to BITS Goa accumulated in one place.",
       link: "https://wiki.bitsg.hosting.acm.org/index.php/Main_Page",
@@ -44,13 +47,15 @@ export default function Resource({ load, setload }) {
       icon: "FaGlobe",
     },
     {
+      isDone: false,
       name: "Blog",
-      desc: "Coming soon",
+      desc: "Our blog where we provide content on research and technology and the tech culture on campus",
       link: "#",
-      img: `${blog}`,
-      icon: "FaGlobe",
+      img: `${Medium}`,
+      icon: "FaBloggerB",
     },
     {
+      isDone: true,
       name: "Form",
       desc: "Subscription form to join ACM Technews mailing lists.",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSdLmpVQfhBI3GI5xM9gIMqv-dNoH72zrQq5kMHBn4i11_TlsA/viewform?usp=sf_link",
@@ -63,9 +68,9 @@ export default function Resource({ load, setload }) {
     <ResourceCard
       key={index}
       name={resource.name}
-      desc={resource.desc}
+      desc={!resource.isDone ? "Coming Soon" : resource.desc}
       link={resource.link}
-      img={resource.img}
+      img={!resource.isDone ? `${WIP}` : resource.img}
       icon={resource.icon}
     />
   ));

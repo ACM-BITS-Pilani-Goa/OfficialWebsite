@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaGlobe } from "react-icons/fa";
+import { FaGithub, FaGlobe, FaBloggerB } from "react-icons/fa";
 import ResourceCardWrapper from "./styles";
 
 const ResourceCard = ({
@@ -33,6 +33,8 @@ const ResourceCard = ({
               <FaGithub color="#000" />
             ) : icon == "FaGlobe" ? (
               <FaGlobe color="#0e7cc1" />
+            ) : icon == "FaBloggerB" ? (
+              <FaBloggerB color="#0e7cc1" />
             ) : (
               <i className="fab fa-wpforms" />
             )}
