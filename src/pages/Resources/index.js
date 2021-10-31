@@ -6,6 +6,8 @@ import githubpic from "../../images/github.jpg";
 import wiki from "../../images/wiki.jpg";
 import WIP from "../../images/coming.jpeg";
 import form from "../../images/form.jpg";
+import youtube from "../../images/youtube.jpg";
+import medium from "../../images/medium.png";
 import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
@@ -47,11 +49,19 @@ export default function Resource({ load, setload }) {
       icon: "FaGlobe",
     },
     {
-      isDone: false,
-      name: "Blog",
-      desc: "Our blog where we provide content on research and technology and the tech culture on campus",
-      link: "#",
-      img: `${Medium}`,
+      isDone: true,
+      name: "Youtube",
+      desc: "Check out our exclusive talks and events on YouTube.",
+      link: "https://www.youtube.com/channel/UC59ImqI7UeT8k4oKjfvfybA",
+      img: `${youtube}`,
+      icon: "FaYoutube",
+    },
+    {
+      isDone: true,
+      name: "Medium",
+      desc: "Check out our exclusive blogs on Medium.",
+      link: "https://medium.com/@acmbpgc",
+      img: `${medium}`,
       icon: "FaBloggerB",
     },
     {
