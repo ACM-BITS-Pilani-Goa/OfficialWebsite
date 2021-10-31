@@ -12,7 +12,6 @@ import Footer from "../../components/Footer/index";
 import Navbar from "../../components/Navbar";
 import ACMlogoHome from "../../images/ACM logo textRight.svg";
 import LoadWrapper from "./loadstyles";
-import Medium from "../../images/Medium.jpeg";
 
 export default function Resource({ load, setload }) {
   useEffect(async () => {
