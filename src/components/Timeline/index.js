@@ -19,6 +19,14 @@ const Timeline = () => {
           <div className="event-content">
             <h3>Hacktoberfest 2021</h3>
             <p>Opened ACM BITS Goa Website for Hacktoberfest 2021</p>
+            <a
+              target="_blank"
+              href="https://github.com/ACM-BITS-Pilani-Goa/OfficialWebsite"
+              rel="noreferrer"
+            >
+              <br />
+              Check it out!
+            </a>
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
