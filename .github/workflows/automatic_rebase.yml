@@ -20,12 +20,12 @@ jobs:
       - uses: khan/pull-request-comment-trigger@master
         name: React with rocket on run
         with:
-          trigger: ","
+          trigger: ','
           reaction: rocket
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-      - run: "echo We print it here for this action to work"
-        if: "true"
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+      - run: 'echo We print it here for this action to work'
+        if: 'true'
       - name: Checkout the latest code
         uses: actions/checkout@v2
         with:
