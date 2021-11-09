@@ -4,33 +4,31 @@
 # Workflow starts when pr comment created or edited
 #
 # Job will not work if:
-# 1. Patch branch name is 'master'
-# 2. There was an updates in github actions in target branch (restriction by github)
-#####################################################################################
+name: Automatic Rebase
 on:
   issue_comment:
-    types: [created, edited]
-name: Automatic Rebase
+    types: [created]
 jobs:
   rebase:
-    name: Rebase PR
-    if: github.event.issue.pull_request != '' && github.event.comment.body == 'rebase'
+    name: Rebase
+    if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/rebase')
     runs-on: ubuntu-latest
     steps:
       - uses: khan/pull-request-comment-trigger@master
         name: React with rocket on run
         with:
-          trigger: ','
+          trigger: ","
           reaction: rocket
         env:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-      - run: 'echo We print it here for this action to work'
-        if: 'true'
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      - run: "echo We print it here for this action to work"
+        if: "true"
       - name: Checkout the latest code
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
       - name: Automatic Rebase
-        uses: cirrus-actions/rebase@1.3.1
+        uses: cirrus-actions/rebase@1.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
