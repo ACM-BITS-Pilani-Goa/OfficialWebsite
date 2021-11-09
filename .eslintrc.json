@@ -20,9 +20,12 @@
     ],
     "rules": {
         "prettier/prettier": [
-            "error",
+            "warn",
             {
                 "endOfLine": "auto"
+            },
+            {
+                "usePrettierrc": true
             }
         ],
         "react/prop-types": "off",
